@@ -1,0 +1,1308 @@
+.epicenter {
+  transform: translate(-50%, -50%); }
+
+.user-select, .devices img, .devices .monitor .monitor-container .monitor-screen, .devices .monitor .monitor-container .monitor-screen .monitor-view, .devices .tablet .tablet-container .tablet-screen, .devices .tablet .tablet-container .tablet-screen .tablet-view, .devices .phone .phone-container .phone-screen, .devices .phone .phone-container .phone-screen .phone-view {
+  -webkit-user-select: none;
+  /* Prevents selecting text or tags */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  /* Prevents dragging of images/divs etc */
+  user-drag: none; }
+
+.devices {
+  display: block;
+  height: 547px;
+  width: 1000px;
+  margin: 0 auto 0 auto;
+  margin-bottom: 20px;
+  position: relative; }
+  @media (max-width: 993px) {
+    .devices {
+      width: 800px;
+      height: 437.6px; } }
+  @media (max-width: 769px) {
+    .devices {
+      width: 600px;
+      height: 328.2px; } }
+  @media (max-width: 481px) {
+    .devices {
+      width: 400px;
+      height: 218.8px; } }
+  .devices .monitor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: auto;
+    right: 12.5px;
+    height: auto;
+    width: 875px; }
+    @media (max-width: 993px) {
+      .devices .monitor {
+        right: 10px;
+        width: 700px; } }
+    @media (max-width: 769px) {
+      .devices .monitor {
+        right: 7.5px;
+        width: 525px; } }
+    @media (max-width: 481px) {
+      .devices .monitor {
+        right: 5px;
+        width: 350px; } }
+    .devices .monitor .monitor-container {
+      position: relative;
+      background: #fcfcfc; }
+      .devices .monitor .monitor-container .monitor-frame {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .devices .monitor .monitor-container .monitor-screen {
+        position: absolute;
+        top: 52.5px;
+        left: 103.75px;
+        width: 76.4%;
+        height: 418.75px;
+        overflow: hidden; }
+        @media (max-width: 993px) {
+          .devices .monitor .monitor-container .monitor-screen {
+            position: absolute;
+            top: 42px;
+            left: 83px;
+            height: 335px; } }
+        @media (max-width: 769px) {
+          .devices .monitor .monitor-container .monitor-screen {
+            position: absolute;
+            top: 31.5px;
+            left: 62.25px;
+            height: 251.25px; } }
+        @media (max-width: 481px) {
+          .devices .monitor .monitor-container .monitor-screen {
+            position: absolute;
+            top: 21px;
+            left: 41.5px;
+            height: 167.5px; } }
+        .devices .monitor .monitor-container .monitor-screen .monitor-view {
+          width: 100%;
+          height: auto; }
+  .devices .tablet {
+    position: absolute;
+    top: 146.25px;
+    left: 0;
+    height: auto;
+    width: 552.5px; }
+    @media (max-width: 993px) {
+      .devices .tablet {
+        position: absolute;
+        top: 117px;
+        left: 0;
+        width: 442px; } }
+    @media (max-width: 769px) {
+      .devices .tablet {
+        position: absolute;
+        top: 87.75px;
+        left: 0;
+        width: 331.5px; } }
+    @media (max-width: 481px) {
+      .devices .tablet {
+        position: absolute;
+        top: 58.5px;
+        left: 0;
+        width: 221px; } }
+    .devices .tablet .tablet-container {
+      position: relative;
+      background: transparent; }
+      .devices .tablet .tablet-container .tablet-frame {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .devices .tablet .tablet-container .tablet-screen {
+        position: absolute;
+        top: 21.25px;
+        left: 60px;
+        width: 79.7%;
+        height: 332.5px;
+        overflow: hidden; }
+        @media (max-width: 993px) {
+          .devices .tablet .tablet-container .tablet-screen {
+            position: absolute;
+            top: 17px;
+            left: 48px;
+            height: 266px; } }
+        @media (max-width: 769px) {
+          .devices .tablet .tablet-container .tablet-screen {
+            position: absolute;
+            top: 13px;
+            left: 36px;
+            height: 199.5px; } }
+        @media (max-width: 481px) {
+          .devices .tablet .tablet-container .tablet-screen {
+            position: absolute;
+            top: 8.5px;
+            left: 24px;
+            height: 133px; } }
+        .devices .tablet .tablet-container .tablet-screen .tablet-view {
+          width: 100%;
+          height: auto; }
+  .devices .phone {
+    height: auto;
+    width: 151.25px;
+    position: absolute;
+    top: 225px;
+    left: 483.75px; }
+    @media (max-width: 993px) {
+      .devices .phone {
+        position: absolute;
+        top: 180px;
+        left: 387px;
+        width: 121px; } }
+    @media (max-width: 769px) {
+      .devices .phone {
+        position: absolute;
+        top: 135px;
+        left: 290.25px;
+        width: 90.75px; } }
+    @media (max-width: 481px) {
+      .devices .phone {
+        position: absolute;
+        top: 90px;
+        left: 193.5px;
+        width: 60.5px; } }
+    .devices .phone .phone-container {
+      position: relative;
+      background: transparent; }
+      .devices .phone .phone-container .phone-frame {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0; }
+      .devices .phone .phone-container .phone-screen {
+        position: absolute;
+        top: 51.25px;
+        left: 12.5px;
+        width: 85.2%;
+        height: 193.75px;
+        overflow: hidden; }
+        @media (max-width: 993px) {
+          .devices .phone .phone-container .phone-screen {
+            position: absolute;
+            top: 41px;
+            left: 10px;
+            height: 155px; } }
+        @media (max-width: 769px) {
+          .devices .phone .phone-container .phone-screen {
+            position: absolute;
+            top: 30.75px;
+            left: 7.5px;
+            height: 116.25px; } }
+        @media (max-width: 481px) {
+          .devices .phone .phone-container .phone-screen {
+            position: absolute;
+            top: 20.5px;
+            left: 5px;
+            height: 77.5px; } }
+        .devices .phone .phone-container .phone-screen .phone-view {
+          width: 100%;
+          height: auto; }
+  .devices .scrollbar {
+    top: 37.5px;
+    right: 12.5px;
+    position: absolute; }
+    @media (max-width: 993px) {
+      .devices .scrollbar {
+        top: 30px;
+        right: 10px; } }
+    @media (max-width: 769px) {
+      .devices .scrollbar {
+        top: 22.5px;
+        right: 7.5px; } }
+    @media (max-width: 481px) {
+      .devices .scrollbar {
+        top: 15px;
+        right: 5px; } }
+    .devices .scrollbar .scrollbar-trail {
+      display: inline-block;
+      position: relative;
+      width: 12.5px;
+      height: 437.5px;
+      background-color: #818181;
+      border-radius: 15px;
+      margin-right: 12.5px;
+      vertical-align: middle;
+      margin: 0 20px; }
+      @media (max-width: 993px) {
+        .devices .scrollbar .scrollbar-trail {
+          width: 10px;
+          height: 350px;
+          margin-right: 10px;
+          margin: 0 16px; } }
+      @media (max-width: 769px) {
+        .devices .scrollbar .scrollbar-trail {
+          width: 7.5px;
+          height: 262.5px;
+          margin-right: 7.5px;
+          margin: 0 12px; } }
+      @media (max-width: 481px) {
+        .devices .scrollbar .scrollbar-trail {
+          width: 5px;
+          height: 175px;
+          margin-right: 5px;
+          margin: 0 8px; } }
+      .devices .scrollbar .scrollbar-trail .scrollbar-tab {
+        position: absolute;
+        top: 0px;
+        left: -7.5px;
+        display: inline-block;
+        cursor: pointer;
+        width: 26.25px;
+        height: 26.25px;
+        background-color: #F1F1F1;
+        border-radius: 26.25px;
+        box-shadow: 0 1.25px 3.75px 1.25px rgba(0, 0, 0, 0.4);
+        transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease; }
+        @media (max-width: 993px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -6px;
+            width: 21px;
+            height: 21px;
+            border-radius: 21px;
+            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4); } }
+        @media (max-width: 769px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -4.5px;
+            width: 15.75px;
+            height: 15.75px;
+            border-radius: 15.75px;
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4); } }
+        @media (max-width: 481px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -3px;
+            width: 10.5px;
+            height: 10.5px;
+            border-radius: 10.5px;
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+      .devices .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+        background-color: #26a69a;
+        box-shadow: 0 1.25px 3.75px 1.25px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
+        @media (max-width: 993px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+        @media (max-width: 769px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+        @media (max-width: 481px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+      .devices .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+        background-color: #F1F1F1;
+        box-shadow: 0 1.25px 3.75px 1.25px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+        @media (max-width: 993px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+        @media (max-width: 769px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+        @media (max-width: 481px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+      .devices .scrollbar .scrollbar-trail .scrollbar-progress {
+        display: inline-block;
+        background-color: #84c7c1;
+        width: 12.5px;
+        border-radius: 15px; }
+        @media (max-width: 993px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 10px; } }
+        @media (max-width: 769px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 7.5px; } }
+        @media (max-width: 481px) {
+          .devices .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 5px; } }
+
+.devices.devices-md {
+  width: 800px;
+  height: 437.6px; }
+  @media (max-width: 769px) {
+    .devices.devices-md {
+      width: 600px;
+      height: 328.2px; } }
+  @media (max-width: 481px) {
+    .devices.devices-md {
+      width: 400px;
+      height: 218.8px; } }
+  .devices.devices-md .monitor {
+    right: 10px;
+    width: 700px; }
+    @media (max-width: 769px) {
+      .devices.devices-md .monitor {
+        right: 7.5px;
+        width: 525px; } }
+    @media (max-width: 481px) {
+      .devices.devices-md .monitor {
+        right: 5px;
+        width: 350px; } }
+    .devices.devices-md .monitor .monitor-container .monitor-screen {
+      position: absolute;
+      top: 42px;
+      left: 83px;
+      height: 335px; }
+      @media (max-width: 769px) {
+        .devices.devices-md .monitor .monitor-container .monitor-screen {
+          position: absolute;
+          top: 31.5px;
+          left: 62.25px;
+          height: 251.25px; } }
+      @media (max-width: 481px) {
+        .devices.devices-md .monitor .monitor-container .monitor-screen {
+          position: absolute;
+          top: 21px;
+          left: 41.5px;
+          height: 167.5px; } }
+  .devices.devices-md .tablet {
+    position: absolute;
+    top: 117px;
+    left: 0;
+    width: 442px; }
+    @media (max-width: 769px) {
+      .devices.devices-md .tablet {
+        position: absolute;
+        top: 87.75px;
+        left: 0;
+        width: 331.5px; } }
+    @media (max-width: 481px) {
+      .devices.devices-md .tablet {
+        position: absolute;
+        top: 58.5px;
+        left: 0;
+        width: 221px; } }
+    .devices.devices-md .tablet .tablet-container .tablet-screen {
+      position: absolute;
+      top: 17px;
+      left: 48px;
+      height: 266px; }
+      @media (max-width: 769px) {
+        .devices.devices-md .tablet .tablet-container .tablet-screen {
+          position: absolute;
+          top: 13px;
+          left: 36px;
+          height: 199.5px; } }
+      @media (max-width: 481px) {
+        .devices.devices-md .tablet .tablet-container .tablet-screen {
+          position: absolute;
+          top: 8.5px;
+          left: 24px;
+          height: 133px; } }
+  .devices.devices-md .phone {
+    width: 121px;
+    position: absolute;
+    top: 180px;
+    left: 387px; }
+    @media (max-width: 769px) {
+      .devices.devices-md .phone {
+        position: absolute;
+        top: 135px;
+        left: 290.25px;
+        width: 90.75px; } }
+    @media (max-width: 481px) {
+      .devices.devices-md .phone {
+        position: absolute;
+        top: 90px;
+        left: 193.5px;
+        width: 60.5px; } }
+    .devices.devices-md .phone .phone-container .phone-screen {
+      position: absolute;
+      top: 41px;
+      left: 10px;
+      height: 155px; }
+      @media (max-width: 769px) {
+        .devices.devices-md .phone .phone-container .phone-screen {
+          position: absolute;
+          top: 30.75px;
+          left: 7.5px;
+          height: 116.25px; } }
+      @media (max-width: 481px) {
+        .devices.devices-md .phone .phone-container .phone-screen {
+          position: absolute;
+          top: 20.5px;
+          left: 5px;
+          height: 77.5px; } }
+  .devices.devices-md .scrollbar {
+    top: 30px;
+    right: 10px; }
+    @media (max-width: 769px) {
+      .devices.devices-md .scrollbar {
+        top: 22.5px;
+        right: 7.5px; } }
+    @media (max-width: 481px) {
+      .devices.devices-md .scrollbar {
+        top: 15px;
+        right: 5px; } }
+    .devices.devices-md .scrollbar .scrollbar-trail {
+      width: 10px;
+      height: 350px;
+      margin-right: 10px;
+      margin: 0 16px; }
+      @media (max-width: 769px) {
+        .devices.devices-md .scrollbar .scrollbar-trail {
+          width: 7.5px;
+          height: 262.5px;
+          margin-right: 7.5px;
+          margin: 0 12px; } }
+      @media (max-width: 481px) {
+        .devices.devices-md .scrollbar .scrollbar-trail {
+          width: 5px;
+          height: 175px;
+          margin-right: 5px;
+          margin: 0 8px; } }
+      .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab {
+        position: absolute;
+        top: 0px;
+        left: -6px;
+        width: 21px;
+        height: 21px;
+        border-radius: 21px;
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4); }
+        @media (max-width: 769px) {
+          .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -4.5px;
+            width: 15.75px;
+            height: 15.75px;
+            border-radius: 15.75px;
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4); } }
+        @media (max-width: 481px) {
+          .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -3px;
+            width: 10.5px;
+            height: 10.5px;
+            border-radius: 10.5px;
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+      .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
+        @media (max-width: 769px) {
+          .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+        @media (max-width: 481px) {
+          .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+      .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+        @media (max-width: 769px) {
+          .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+        @media (max-width: 481px) {
+          .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+      .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-progress {
+        width: 10px; }
+        @media (max-width: 769px) {
+          .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 7.5px; } }
+        @media (max-width: 481px) {
+          .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 5px; } }
+
+.devices.devices-sm {
+  width: 600px;
+  height: 328.2px; }
+  @media (max-width: 481px) {
+    .devices.devices-sm {
+      width: 400px;
+      height: 218.8px; } }
+  .devices.devices-sm .monitor {
+    right: 7.5px;
+    width: 525px; }
+    @media (max-width: 481px) {
+      .devices.devices-sm .monitor {
+        right: 5px;
+        width: 350px; } }
+    .devices.devices-sm .monitor .monitor-container .monitor-screen {
+      position: absolute;
+      top: 31.5px;
+      left: 62.25px;
+      height: 251.25px; }
+      @media (max-width: 481px) {
+        .devices.devices-sm .monitor .monitor-container .monitor-screen {
+          position: absolute;
+          top: 21px;
+          left: 41.5px;
+          height: 167.5px; } }
+  .devices.devices-sm .tablet {
+    position: absolute;
+    top: 87.75px;
+    left: 0;
+    width: 331.5px; }
+    @media (max-width: 481px) {
+      .devices.devices-sm .tablet {
+        position: absolute;
+        top: 58.5px;
+        left: 0;
+        width: 221px; } }
+    .devices.devices-sm .tablet .tablet-container .tablet-screen {
+      position: absolute;
+      top: 13px;
+      left: 36px;
+      height: 199.5px; }
+      @media (max-width: 481px) {
+        .devices.devices-sm .tablet .tablet-container .tablet-screen {
+          position: absolute;
+          top: 8.5px;
+          left: 24px;
+          height: 133px; } }
+  .devices.devices-sm .phone {
+    width: 90.75px;
+    position: absolute;
+    top: 135px;
+    left: 290.25px; }
+    @media (max-width: 481px) {
+      .devices.devices-sm .phone {
+        position: absolute;
+        top: 90px;
+        left: 193.5px;
+        width: 60.5px; } }
+    .devices.devices-sm .phone .phone-container .phone-screen {
+      position: absolute;
+      top: 30.75px;
+      left: 7.5px;
+      height: 116.25px; }
+      @media (max-width: 481px) {
+        .devices.devices-sm .phone .phone-container .phone-screen {
+          position: absolute;
+          top: 20.5px;
+          left: 5px;
+          height: 77.5px; } }
+  .devices.devices-sm .scrollbar {
+    top: 22.5px;
+    right: 7.5px; }
+    @media (max-width: 481px) {
+      .devices.devices-sm .scrollbar {
+        top: 15px;
+        right: 5px; } }
+    .devices.devices-sm .scrollbar .scrollbar-trail {
+      width: 7.5px;
+      height: 262.5px;
+      margin-right: 7.5px;
+      margin: 0 12px; }
+      @media (max-width: 481px) {
+        .devices.devices-sm .scrollbar .scrollbar-trail {
+          width: 5px;
+          height: 175px;
+          margin-right: 5px;
+          margin: 0 8px; } }
+      .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab {
+        position: absolute;
+        top: 0px;
+        left: -4.5px;
+        width: 15.75px;
+        height: 15.75px;
+        border-radius: 15.75px;
+        box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4); }
+        @media (max-width: 481px) {
+          .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -3px;
+            width: 10.5px;
+            height: 10.5px;
+            border-radius: 10.5px;
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+      .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+        box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
+        @media (max-width: 481px) {
+          .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+      .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+        box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+        @media (max-width: 481px) {
+          .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+      .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-progress {
+        width: 7.5px; }
+        @media (max-width: 481px) {
+          .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 5px; } }
+
+.devices.devices-xs {
+  width: 400px;
+  height: 218.8px; }
+  .devices.devices-xs .monitor {
+    right: 5px;
+    width: 350px; }
+    .devices.devices-xs .monitor .monitor-container .monitor-screen {
+      position: absolute;
+      top: 21px;
+      left: 41.5px;
+      height: 167.5px; }
+  .devices.devices-xs .tablet {
+    position: absolute;
+    top: 58.5px;
+    left: 0;
+    width: 221px; }
+    .devices.devices-xs .tablet .tablet-container .tablet-screen {
+      position: absolute;
+      top: 8.5px;
+      left: 24px;
+      height: 133px; }
+  .devices.devices-xs .phone {
+    width: 60.5px;
+    position: absolute;
+    top: 90px;
+    left: 193.5px; }
+    .devices.devices-xs .phone .phone-container .phone-screen {
+      position: absolute;
+      top: 20.5px;
+      left: 5px;
+      height: 77.5px; }
+  .devices.devices-xs .scrollbar {
+    top: 15px;
+    right: 5px; }
+    .devices.devices-xs .scrollbar .scrollbar-trail {
+      width: 5px;
+      height: 175px;
+      margin-right: 5px;
+      margin: 0 8px; }
+      .devices.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab {
+        position: absolute;
+        top: 0px;
+        left: -3px;
+        width: 10.5px;
+        height: 10.5px;
+        border-radius: 10.5px;
+        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); }
+      .devices.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
+      .devices.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+      .devices.devices-xs .scrollbar .scrollbar-trail .scrollbar-progress {
+        width: 5px; }
+
+.devices.single-device {
+  width: 875px; }
+  @media (max-width: 993px) {
+    .devices.single-device {
+      width: 700px; } }
+  @media (max-width: 769px) {
+    .devices.single-device {
+      width: 525px; } }
+  @media (max-width: 481px) {
+    .devices.single-device {
+      width: 350px; } }
+  .devices.single-device .monitor {
+    right: 0;
+    width: 100%; }
+    .devices.single-device .monitor .monitor-container .monitor-screen {
+      position: absolute;
+      top: 52.5px;
+      left: 103.75px;
+      height: 418.75px; }
+      @media (max-width: 993px) {
+        .devices.single-device .monitor .monitor-container .monitor-screen {
+          position: absolute;
+          top: 42px;
+          left: 83px;
+          height: 335px; } }
+      @media (max-width: 769px) {
+        .devices.single-device .monitor .monitor-container .monitor-screen {
+          position: absolute;
+          top: 31.5px;
+          left: 62.25px;
+          height: 251.25px; } }
+      @media (max-width: 481px) {
+        .devices.single-device .monitor .monitor-container .monitor-screen {
+          position: absolute;
+          top: 21px;
+          left: 41.5px;
+          height: 167.5px; } }
+  .devices.single-device .tablet {
+    width: 810px;
+    height: 547px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media (max-width: 993px) {
+      .devices.single-device .tablet {
+        width: 648px;
+        height: 437.6px; } }
+    @media (max-width: 769px) {
+      .devices.single-device .tablet {
+        width: 486px;
+        height: 328.2px; } }
+    @media (max-width: 481px) {
+      .devices.single-device .tablet {
+        width: 324px;
+        height: 218.8px; } }
+    .devices.single-device .tablet .tablet-container .tablet-frame {
+      width: auto;
+      height: 547px; }
+      @media (max-width: 993px) {
+        .devices.single-device .tablet .tablet-container .tablet-frame {
+          height: 437.6px; } }
+      @media (max-width: 769px) {
+        .devices.single-device .tablet .tablet-container .tablet-frame {
+          height: 328.2px; } }
+      @media (max-width: 481px) {
+        .devices.single-device .tablet .tablet-container .tablet-frame {
+          height: 218.8px; } }
+    .devices.single-device .tablet .tablet-container .tablet-screen {
+      position: absolute;
+      top: 32.25px;
+      left: 88px;
+      height: 484.5px;
+      cursor: pointer; }
+      @media (max-width: 993px) {
+        .devices.single-device .tablet .tablet-container .tablet-screen {
+          position: absolute;
+          top: 25.8px;
+          left: 70.4px;
+          height: 387.6px; } }
+      @media (max-width: 769px) {
+        .devices.single-device .tablet .tablet-container .tablet-screen {
+          position: absolute;
+          top: 19.125px;
+          left: 52.8px;
+          height: 291.45px; } }
+      @media (max-width: 481px) {
+        .devices.single-device .tablet .tablet-container .tablet-screen {
+          position: absolute;
+          top: 12.75px;
+          left: 35.2px;
+          height: 194.3px; } }
+  .devices.single-device .phone {
+    width: 279.3px;
+    height: 547px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%); }
+    @media (max-width: 993px) {
+      .devices.single-device .phone {
+        width: 223.44px;
+        height: 437.6px; } }
+    @media (max-width: 769px) {
+      .devices.single-device .phone {
+        width: 167.58px;
+        height: 328.2px; } }
+    @media (max-width: 481px) {
+      .devices.single-device .phone {
+        width: 111.72px;
+        height: 218.8px; } }
+    .devices.single-device .phone .phone-container .phone-frame {
+      width: auto;
+      height: 547px; }
+      @media (max-width: 993px) {
+        .devices.single-device .phone .phone-container .phone-frame {
+          height: 437.6px; } }
+      @media (max-width: 769px) {
+        .devices.single-device .phone .phone-container .phone-frame {
+          height: 328.2px; } }
+      @media (max-width: 481px) {
+        .devices.single-device .phone .phone-container .phone-frame {
+          height: 218.8px; } }
+    .devices.single-device .phone .phone-container .phone-screen {
+      position: absolute;
+      top: 96.25px;
+      left: 23.5px;
+      width: 236px;
+      height: 354.75px;
+      cursor: pointer; }
+      @media (max-width: 993px) {
+        .devices.single-device .phone .phone-container .phone-screen {
+          position: absolute;
+          top: 77px;
+          left: 18.8px;
+          width: 188.8px;
+          height: 283.8px; } }
+      @media (max-width: 769px) {
+        .devices.single-device .phone .phone-container .phone-screen {
+          position: absolute;
+          top: 57px;
+          left: 14.1px;
+          width: 141.6px;
+          height: 213.6px; } }
+      @media (max-width: 481px) {
+        .devices.single-device .phone .phone-container .phone-screen {
+          position: absolute;
+          top: 38px;
+          left: 9.4px;
+          width: 94.4px;
+          height: 142.4px; } }
+  .devices.single-device .scrollbar {
+    top: 37.5px;
+    right: 12.5px; }
+    @media (max-width: 993px) {
+      .devices.single-device .scrollbar {
+        top: 30px;
+        right: 10px; } }
+    @media (max-width: 769px) {
+      .devices.single-device .scrollbar {
+        top: 22.5px;
+        right: 7.5px; } }
+    @media (max-width: 481px) {
+      .devices.single-device .scrollbar {
+        top: 15px;
+        right: 5px; } }
+    .devices.single-device .scrollbar .scrollbar-trail {
+      width: 12.5px;
+      height: 437.5px;
+      margin-right: 12.5px;
+      margin: 0 20px; }
+      @media (max-width: 993px) {
+        .devices.single-device .scrollbar .scrollbar-trail {
+          width: 10px;
+          height: 350px;
+          margin-right: 10px;
+          margin: 0 16px; } }
+      @media (max-width: 769px) {
+        .devices.single-device .scrollbar .scrollbar-trail {
+          width: 7.5px;
+          height: 262.5px;
+          margin-right: 7.5px;
+          margin: 0 12px; } }
+      @media (max-width: 481px) {
+        .devices.single-device .scrollbar .scrollbar-trail {
+          width: 5px;
+          height: 175px;
+          margin-right: 5px;
+          margin: 0 8px; } }
+      .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab {
+        position: absolute;
+        top: 0px;
+        left: -7.5px;
+        width: 26.25px;
+        height: 26.25px;
+        border-radius: 26.25px;
+        box-shadow: 0 1.25px 3.75px 1.25px rgba(0, 0, 0, 0.4); }
+        @media (max-width: 993px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -6px;
+            width: 21px;
+            height: 21px;
+            border-radius: 21px;
+            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4); } }
+        @media (max-width: 769px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -4.5px;
+            width: 15.75px;
+            height: 15.75px;
+            border-radius: 15.75px;
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4); } }
+        @media (max-width: 481px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -3px;
+            width: 10.5px;
+            height: 10.5px;
+            border-radius: 10.5px;
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+      .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+        box-shadow: 0 1.25px 3.75px 1.25px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
+        @media (max-width: 993px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+        @media (max-width: 769px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+        @media (max-width: 481px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+      .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+        box-shadow: 0 1.25px 3.75px 1.25px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+        @media (max-width: 993px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+        @media (max-width: 769px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+        @media (max-width: 481px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+      .devices.single-device .scrollbar .scrollbar-trail .scrollbar-progress {
+        width: 12.5px; }
+        @media (max-width: 993px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 10px; } }
+        @media (max-width: 769px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 7.5px; } }
+        @media (max-width: 481px) {
+          .devices.single-device .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 5px; } }
+  .devices.single-device .monitor + .tablet, .devices.single-device .monitor + .phone, .devices.single-device .tablet + .phone, .devices.single-device .tablet + .scrollbar, .devices.single-device .phone + .scrollbar {
+    display: none; }
+
+.devices.single-device.devices-md {
+  width: 700px; }
+  @media (max-width: 769px) {
+    .devices.single-device.devices-md {
+      width: 525px; } }
+  @media (max-width: 481px) {
+    .devices.single-device.devices-md {
+      width: 350px; } }
+  .devices.single-device.devices-md .monitor .monitor-container .monitor-screen {
+    position: absolute;
+    top: 42px;
+    left: 83px;
+    height: 335px; }
+    @media (max-width: 769px) {
+      .devices.single-device.devices-md .monitor .monitor-container .monitor-screen {
+        position: absolute;
+        top: 31.5px;
+        left: 62.25px;
+        height: 251.25px; } }
+    @media (max-width: 481px) {
+      .devices.single-device.devices-md .monitor .monitor-container .monitor-screen {
+        position: absolute;
+        top: 21px;
+        left: 41.5px;
+        height: 167.5px; } }
+  .devices.single-device.devices-md .tablet {
+    width: 648px;
+    height: 437.6px; }
+    @media (max-width: 769px) {
+      .devices.single-device.devices-md .tablet {
+        width: 486px;
+        height: 328.2px; } }
+    @media (max-width: 481px) {
+      .devices.single-device.devices-md .tablet {
+        width: 324px;
+        height: 218.8px; } }
+    .devices.single-device.devices-md .tablet .tablet-container .tablet-frame {
+      height: 437.6px; }
+      @media (max-width: 769px) {
+        .devices.single-device.devices-md .tablet .tablet-container .tablet-frame {
+          height: 328.2px; } }
+      @media (max-width: 481px) {
+        .devices.single-device.devices-md .tablet .tablet-container .tablet-frame {
+          height: 218.8px; } }
+    .devices.single-device.devices-md .tablet .tablet-container .tablet-screen {
+      position: absolute;
+      top: 25.8px;
+      left: 70.4px;
+      height: 387.6px; }
+      @media (max-width: 769px) {
+        .devices.single-device.devices-md .tablet .tablet-container .tablet-screen {
+          position: absolute;
+          top: 19.35px;
+          left: 52.8px;
+          height: 290.7px; } }
+      @media (max-width: 481px) {
+        .devices.single-device.devices-md .tablet .tablet-container .tablet-screen {
+          position: absolute;
+          top: 12.9px;
+          left: 35.2px;
+          height: 193.8px; } }
+  .devices.single-device.devices-md .phone {
+    width: 223.44px;
+    height: 437.6px; }
+    @media (max-width: 769px) {
+      .devices.single-device.devices-md .phone {
+        width: 167.58px;
+        height: 328.2px; } }
+    @media (max-width: 481px) {
+      .devices.single-device.devices-md .phone {
+        width: 111.72px;
+        height: 218.8px; } }
+    .devices.single-device.devices-md .phone .phone-container .phone-frame {
+      height: 437.6px; }
+      @media (max-width: 769px) {
+        .devices.single-device.devices-md .phone .phone-container .phone-frame {
+          height: 328.2px; } }
+      @media (max-width: 481px) {
+        .devices.single-device.devices-md .phone .phone-container .phone-frame {
+          height: 218.8px; } }
+    .devices.single-device.devices-md .phone .phone-container .phone-screen {
+      position: absolute;
+      top: 77px;
+      left: 18.8px;
+      width: 188.8px;
+      height: 283.8px; }
+      @media (max-width: 769px) {
+        .devices.single-device.devices-md .phone .phone-container .phone-screen {
+          position: absolute;
+          top: 57.75px;
+          left: 14.1px;
+          width: 141.6px;
+          height: 212.85px; } }
+      @media (max-width: 481px) {
+        .devices.single-device.devices-md .phone .phone-container .phone-screen {
+          position: absolute;
+          top: 38.5px;
+          left: 9.4px;
+          width: 94.4px;
+          height: 141.9px; } }
+  .devices.single-device.devices-md .scrollbar {
+    top: 30px;
+    right: 10px; }
+    @media (max-width: 769px) {
+      .devices.single-device.devices-md .scrollbar {
+        top: 22.5px;
+        right: 7.5px; } }
+    @media (max-width: 481px) {
+      .devices.single-device.devices-md .scrollbar {
+        top: 15px;
+        right: 5px; } }
+    .devices.single-device.devices-md .scrollbar .scrollbar-trail {
+      width: 10px;
+      height: 350px;
+      margin-right: 10px;
+      margin: 0 16px; }
+      @media (max-width: 769px) {
+        .devices.single-device.devices-md .scrollbar .scrollbar-trail {
+          width: 7.5px;
+          height: 262.5px;
+          margin-right: 7.5px;
+          margin: 0 12px; } }
+      @media (max-width: 481px) {
+        .devices.single-device.devices-md .scrollbar .scrollbar-trail {
+          width: 5px;
+          height: 175px;
+          margin-right: 5px;
+          margin: 0 8px; } }
+      .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab {
+        position: absolute;
+        top: 0px;
+        left: -6px;
+        width: 21px;
+        height: 21px;
+        border-radius: 21px;
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4); }
+        @media (max-width: 769px) {
+          .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -4.5px;
+            width: 15.75px;
+            height: 15.75px;
+            border-radius: 15.75px;
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4); } }
+        @media (max-width: 481px) {
+          .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -3px;
+            width: 10.5px;
+            height: 10.5px;
+            border-radius: 10.5px;
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+      .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
+        @media (max-width: 769px) {
+          .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+        @media (max-width: 481px) {
+          .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+      .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+        @media (max-width: 769px) {
+          .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+        @media (max-width: 481px) {
+          .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+      .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-progress {
+        width: 10px; }
+        @media (max-width: 769px) {
+          .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 7.5px; } }
+        @media (max-width: 481px) {
+          .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 5px; } }
+
+.devices.single-device.devices-sm {
+  width: 525px; }
+  @media (max-width: 481px) {
+    .devices.single-device.devices-sm {
+      width: 350px; } }
+  .devices.single-device.devices-sm .monitor .monitor-container .monitor-screen {
+    position: absolute;
+    top: 31.5px;
+    left: 62.25px;
+    height: 251.25px; }
+    @media (max-width: 481px) {
+      .devices.single-device.devices-sm .monitor .monitor-container .monitor-screen {
+        position: absolute;
+        top: 21px;
+        left: 41.5px;
+        height: 167.5px; } }
+  .devices.single-device.devices-sm .tablet {
+    width: 486px;
+    height: 328.2px; }
+    @media (max-width: 481px) {
+      .devices.single-device.devices-sm .tablet {
+        width: 324px;
+        height: 218.8px; } }
+    .devices.single-device.devices-sm .tablet .tablet-container .tablet-frame {
+      height: 328.2px; }
+      @media (max-width: 481px) {
+        .devices.single-device.devices-sm .tablet .tablet-container .tablet-frame {
+          height: 218.8px; } }
+    .devices.single-device.devices-sm .tablet .tablet-container .tablet-screen {
+      position: absolute;
+      top: 19.35px;
+      left: 52.8px;
+      height: 290.7px; }
+      @media (max-width: 481px) {
+        .devices.single-device.devices-sm .tablet .tablet-container .tablet-screen {
+          position: absolute;
+          top: 12.9px;
+          left: 35.2px;
+          height: 193.8px; } }
+  .devices.single-device.devices-sm .phone {
+    width: 167.58px;
+    height: 328.2px; }
+    @media (max-width: 481px) {
+      .devices.single-device.devices-sm .phone {
+        width: 111.72px;
+        height: 218.8px; } }
+    .devices.single-device.devices-sm .phone .phone-container .phone-frame {
+      height: 328.2px; }
+      @media (max-width: 481px) {
+        .devices.single-device.devices-sm .phone .phone-container .phone-frame {
+          height: 218.8px; } }
+    .devices.single-device.devices-sm .phone .phone-container .phone-screen {
+      position: absolute;
+      top: 57.75px;
+      left: 14.1px;
+      width: 141.6px;
+      height: 212.85px; }
+      @media (max-width: 481px) {
+        .devices.single-device.devices-sm .phone .phone-container .phone-screen {
+          position: absolute;
+          top: 38.5px;
+          left: 9.4px;
+          width: 94.4px;
+          height: 141.9px; } }
+  .devices.single-device.devices-sm .scrollbar {
+    top: 22.5px;
+    right: 7.5px; }
+    @media (max-width: 481px) {
+      .devices.single-device.devices-sm .scrollbar {
+        top: 15px;
+        right: 5px; } }
+    .devices.single-device.devices-sm .scrollbar .scrollbar-trail {
+      width: 7.5px;
+      height: 262.5px;
+      margin-right: 7.5px;
+      margin: 0 12px; }
+      @media (max-width: 481px) {
+        .devices.single-device.devices-sm .scrollbar .scrollbar-trail {
+          width: 5px;
+          height: 175px;
+          margin-right: 5px;
+          margin: 0 8px; } }
+      .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab {
+        position: absolute;
+        top: 0px;
+        left: -4.5px;
+        width: 15.75px;
+        height: 15.75px;
+        border-radius: 15.75px;
+        box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4); }
+        @media (max-width: 481px) {
+          .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab {
+            position: absolute;
+            top: 0px;
+            left: -3px;
+            width: 10.5px;
+            height: 10.5px;
+            border-radius: 10.5px;
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+      .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+        box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
+        @media (max-width: 481px) {
+          .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+      .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+        box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+        @media (max-width: 481px) {
+          .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+      .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-progress {
+        width: 7.5px; }
+        @media (max-width: 481px) {
+          .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-progress {
+            width: 5px; } }
+
+.devices.single-device.devices-xs {
+  width: 350px; }
+  .devices.single-device.devices-xs .monitor .monitor-container .monitor-screen {
+    position: absolute;
+    top: 21px;
+    left: 41.5px;
+    height: 167.5px; }
+  .devices.single-device.devices-xs .tablet {
+    width: 324px;
+    height: 218.8px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%); }
+    .devices.single-device.devices-xs .tablet .tablet-container .tablet-frame {
+      width: auto;
+      height: 218.8px; }
+    .devices.single-device.devices-xs .tablet .tablet-container .tablet-screen {
+      position: absolute;
+      top: 12.9px;
+      left: 35.2px;
+      height: 193.8px; }
+  .devices.single-device.devices-xs .phone {
+    width: 111.72px;
+    height: 218.8px; }
+    @media (max-width: 481px) {
+      .devices.single-device.devices-xs .phone {
+        width: 111.72px;
+        height: 218.8px; } }
+    .devices.single-device.devices-xs .phone .phone-container .phone-frame {
+      height: 218.8px; }
+    .devices.single-device.devices-xs .phone .phone-container .phone-screen {
+      position: absolute;
+      top: 38.5px;
+      left: 9.4px;
+      width: 94.4px;
+      height: 141.9px; }
+  .devices.single-device.devices-xs .scrollbar {
+    top: 15px;
+    right: 5px; }
+    .devices.single-device.devices-xs .scrollbar .scrollbar-trail {
+      width: 5px;
+      height: 175px;
+      margin-right: 5px;
+      margin: 0 8px; }
+      .devices.single-device.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab {
+        position: absolute;
+        top: 0px;
+        left: -3px;
+        width: 10.5px;
+        height: 10.5px;
+        border-radius: 10.5px;
+        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); }
+      .devices.single-device.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab.positive {
+        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
+      .devices.single-device.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab.negative {
+        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+      .devices.single-device.devices-xs .scrollbar .scrollbar-trail .scrollbar-progress {
+        width: 5px; }
+
+/*# sourceMappingURL=style.css.map */
