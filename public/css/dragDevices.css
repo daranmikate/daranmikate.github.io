@@ -1,3 +1,6 @@
+body {
+  background-color: #fcfcfc; }
+
 .epicenter {
   transform: translate(-50%, -50%); }
 
@@ -28,8 +31,8 @@
       height: 328.2px; } }
   @media (max-width: 481px) {
     .devices {
-      width: 400px;
-      height: 218.8px; } }
+      width: 304px;
+      height: 166.288px; } }
   .devices .monitor {
     position: absolute;
     top: 0;
@@ -48,8 +51,8 @@
         width: 525px; } }
     @media (max-width: 481px) {
       .devices .monitor {
-        right: 5px;
-        width: 350px; } }
+        right: 3.8px;
+        width: 266px; } }
     .devices .monitor .monitor-container {
       position: relative;
       background: #fcfcfc; }
@@ -81,9 +84,9 @@
         @media (max-width: 481px) {
           .devices .monitor .monitor-container .monitor-screen {
             position: absolute;
-            top: 21px;
-            left: 41.5px;
-            height: 167.5px; } }
+            top: 15.96px;
+            left: 31.54px;
+            height: 127.3px; } }
         .devices .monitor .monitor-container .monitor-screen .monitor-view {
           width: 100%;
           height: auto; }
@@ -108,9 +111,9 @@
     @media (max-width: 481px) {
       .devices .tablet {
         position: absolute;
-        top: 58.5px;
+        top: 44.46px;
         left: 0;
-        width: 221px; } }
+        width: 167.96px; } }
     .devices .tablet .tablet-container {
       position: relative;
       background: transparent; }
@@ -142,9 +145,9 @@
         @media (max-width: 481px) {
           .devices .tablet .tablet-container .tablet-screen {
             position: absolute;
-            top: 8.5px;
-            left: 24px;
-            height: 133px; } }
+            top: 6.46px;
+            left: 18.24px;
+            height: 101.08px; } }
         .devices .tablet .tablet-container .tablet-screen .tablet-view {
           width: 100%;
           height: auto; }
@@ -169,9 +172,9 @@
     @media (max-width: 481px) {
       .devices .phone {
         position: absolute;
-        top: 90px;
-        left: 193.5px;
-        width: 60.5px; } }
+        top: 68.4px;
+        left: 147.06px;
+        width: 45.98px; } }
     .devices .phone .phone-container {
       position: relative;
       background: transparent; }
@@ -203,9 +206,9 @@
         @media (max-width: 481px) {
           .devices .phone .phone-container .phone-screen {
             position: absolute;
-            top: 20.5px;
-            left: 5px;
-            height: 77.5px; } }
+            top: 15.58px;
+            left: 3.8px;
+            height: 58.9px; } }
         .devices .phone .phone-container .phone-screen .phone-view {
           width: 100%;
           height: auto; }
@@ -223,8 +226,8 @@
         right: 7.5px; } }
     @media (max-width: 481px) {
       .devices .scrollbar {
-        top: 15px;
-        right: 5px; } }
+        top: 11.4px;
+        right: 3.8px; } }
     .devices .scrollbar .scrollbar-trail {
       display: inline-block;
       position: relative;
@@ -249,10 +252,10 @@
           margin: 0 12px; } }
       @media (max-width: 481px) {
         .devices .scrollbar .scrollbar-trail {
-          width: 5px;
-          height: 175px;
-          margin-right: 5px;
-          margin: 0 8px; } }
+          width: 3.8px;
+          height: 133px;
+          margin-right: 3.8px;
+          margin: 0 6.08px; } }
       .devices .scrollbar .scrollbar-trail .scrollbar-tab {
         position: absolute;
         top: 0px;
@@ -287,11 +290,11 @@
           .devices .scrollbar .scrollbar-trail .scrollbar-tab {
             position: absolute;
             top: 0px;
-            left: -3px;
-            width: 10.5px;
-            height: 10.5px;
-            border-radius: 10.5px;
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+            left: -2.28px;
+            width: 7.98px;
+            height: 7.98px;
+            border-radius: 7.98px;
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4); } }
       .devices .scrollbar .scrollbar-trail .scrollbar-tab.positive {
         background-color: #26a69a;
         box-shadow: 0 1.25px 3.75px 1.25px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
@@ -303,7 +306,7 @@
             box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
         @media (max-width: 481px) {
           .devices .scrollbar .scrollbar-trail .scrollbar-tab.positive {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
       .devices .scrollbar .scrollbar-trail .scrollbar-tab.negative {
         background-color: #F1F1F1;
         box-shadow: 0 1.25px 3.75px 1.25px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
@@ -315,7 +318,7 @@
             box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
         @media (max-width: 481px) {
           .devices .scrollbar .scrollbar-trail .scrollbar-tab.negative {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
       .devices .scrollbar .scrollbar-trail .scrollbar-progress {
         display: inline-block;
         background-color: #84c7c1;
@@ -329,7 +332,7 @@
             width: 7.5px; } }
         @media (max-width: 481px) {
           .devices .scrollbar .scrollbar-trail .scrollbar-progress {
-            width: 5px; } }
+            width: 3.8px; } }
 
 .devices.devices-md {
   width: 800px;
@@ -340,8 +343,8 @@
       height: 328.2px; } }
   @media (max-width: 481px) {
     .devices.devices-md {
-      width: 400px;
-      height: 218.8px; } }
+      width: 304px;
+      height: 166.288px; } }
   .devices.devices-md .monitor {
     right: 10px;
     width: 700px; }
@@ -351,8 +354,8 @@
         width: 525px; } }
     @media (max-width: 481px) {
       .devices.devices-md .monitor {
-        right: 5px;
-        width: 350px; } }
+        right: 3.8px;
+        width: 266px; } }
     .devices.devices-md .monitor .monitor-container .monitor-screen {
       position: absolute;
       top: 42px;
@@ -367,9 +370,9 @@
       @media (max-width: 481px) {
         .devices.devices-md .monitor .monitor-container .monitor-screen {
           position: absolute;
-          top: 21px;
-          left: 41.5px;
-          height: 167.5px; } }
+          top: 15.96px;
+          left: 31.54px;
+          height: 127.3px; } }
   .devices.devices-md .tablet {
     position: absolute;
     top: 117px;
@@ -384,9 +387,9 @@
     @media (max-width: 481px) {
       .devices.devices-md .tablet {
         position: absolute;
-        top: 58.5px;
+        top: 44.46px;
         left: 0;
-        width: 221px; } }
+        width: 167.96px; } }
     .devices.devices-md .tablet .tablet-container .tablet-screen {
       position: absolute;
       top: 17px;
@@ -401,9 +404,9 @@
       @media (max-width: 481px) {
         .devices.devices-md .tablet .tablet-container .tablet-screen {
           position: absolute;
-          top: 8.5px;
-          left: 24px;
-          height: 133px; } }
+          top: 6.46px;
+          left: 18.24px;
+          height: 101.08px; } }
   .devices.devices-md .phone {
     width: 121px;
     position: absolute;
@@ -418,9 +421,9 @@
     @media (max-width: 481px) {
       .devices.devices-md .phone {
         position: absolute;
-        top: 90px;
-        left: 193.5px;
-        width: 60.5px; } }
+        top: 68.4px;
+        left: 147.06px;
+        width: 45.98px; } }
     .devices.devices-md .phone .phone-container .phone-screen {
       position: absolute;
       top: 41px;
@@ -435,9 +438,9 @@
       @media (max-width: 481px) {
         .devices.devices-md .phone .phone-container .phone-screen {
           position: absolute;
-          top: 20.5px;
-          left: 5px;
-          height: 77.5px; } }
+          top: 15.58px;
+          left: 3.8px;
+          height: 58.9px; } }
   .devices.devices-md .scrollbar {
     top: 30px;
     right: 10px; }
@@ -447,8 +450,8 @@
         right: 7.5px; } }
     @media (max-width: 481px) {
       .devices.devices-md .scrollbar {
-        top: 15px;
-        right: 5px; } }
+        top: 11.4px;
+        right: 3.8px; } }
     .devices.devices-md .scrollbar .scrollbar-trail {
       width: 10px;
       height: 350px;
@@ -462,10 +465,10 @@
           margin: 0 12px; } }
       @media (max-width: 481px) {
         .devices.devices-md .scrollbar .scrollbar-trail {
-          width: 5px;
-          height: 175px;
-          margin-right: 5px;
-          margin: 0 8px; } }
+          width: 3.8px;
+          height: 133px;
+          margin-right: 3.8px;
+          margin: 0 6.08px; } }
       .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab {
         position: absolute;
         top: 0px;
@@ -487,11 +490,11 @@
           .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab {
             position: absolute;
             top: 0px;
-            left: -3px;
-            width: 10.5px;
-            height: 10.5px;
-            border-radius: 10.5px;
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+            left: -2.28px;
+            width: 7.98px;
+            height: 7.98px;
+            border-radius: 7.98px;
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4); } }
       .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.positive {
         box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
         @media (max-width: 769px) {
@@ -499,7 +502,7 @@
             box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
         @media (max-width: 481px) {
           .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.positive {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
       .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.negative {
         box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
         @media (max-width: 769px) {
@@ -507,7 +510,7 @@
             box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
         @media (max-width: 481px) {
           .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.negative {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
       .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-progress {
         width: 10px; }
         @media (max-width: 769px) {
@@ -515,22 +518,22 @@
             width: 7.5px; } }
         @media (max-width: 481px) {
           .devices.devices-md .scrollbar .scrollbar-trail .scrollbar-progress {
-            width: 5px; } }
+            width: 3.8px; } }
 
 .devices.devices-sm {
   width: 600px;
   height: 328.2px; }
   @media (max-width: 481px) {
     .devices.devices-sm {
-      width: 400px;
-      height: 218.8px; } }
+      width: 304px;
+      height: 166.288px; } }
   .devices.devices-sm .monitor {
     right: 7.5px;
     width: 525px; }
     @media (max-width: 481px) {
       .devices.devices-sm .monitor {
-        right: 5px;
-        width: 350px; } }
+        right: 3.8px;
+        width: 266px; } }
     .devices.devices-sm .monitor .monitor-container .monitor-screen {
       position: absolute;
       top: 31.5px;
@@ -539,9 +542,9 @@
       @media (max-width: 481px) {
         .devices.devices-sm .monitor .monitor-container .monitor-screen {
           position: absolute;
-          top: 21px;
-          left: 41.5px;
-          height: 167.5px; } }
+          top: 15.96px;
+          left: 31.54px;
+          height: 127.3px; } }
   .devices.devices-sm .tablet {
     position: absolute;
     top: 87.75px;
@@ -550,9 +553,9 @@
     @media (max-width: 481px) {
       .devices.devices-sm .tablet {
         position: absolute;
-        top: 58.5px;
+        top: 44.46px;
         left: 0;
-        width: 221px; } }
+        width: 167.96px; } }
     .devices.devices-sm .tablet .tablet-container .tablet-screen {
       position: absolute;
       top: 13px;
@@ -561,9 +564,9 @@
       @media (max-width: 481px) {
         .devices.devices-sm .tablet .tablet-container .tablet-screen {
           position: absolute;
-          top: 8.5px;
-          left: 24px;
-          height: 133px; } }
+          top: 6.46px;
+          left: 18.24px;
+          height: 101.08px; } }
   .devices.devices-sm .phone {
     width: 90.75px;
     position: absolute;
@@ -572,9 +575,9 @@
     @media (max-width: 481px) {
       .devices.devices-sm .phone {
         position: absolute;
-        top: 90px;
-        left: 193.5px;
-        width: 60.5px; } }
+        top: 68.4px;
+        left: 147.06px;
+        width: 45.98px; } }
     .devices.devices-sm .phone .phone-container .phone-screen {
       position: absolute;
       top: 30.75px;
@@ -583,16 +586,16 @@
       @media (max-width: 481px) {
         .devices.devices-sm .phone .phone-container .phone-screen {
           position: absolute;
-          top: 20.5px;
-          left: 5px;
-          height: 77.5px; } }
+          top: 15.58px;
+          left: 3.8px;
+          height: 58.9px; } }
   .devices.devices-sm .scrollbar {
     top: 22.5px;
     right: 7.5px; }
     @media (max-width: 481px) {
       .devices.devices-sm .scrollbar {
-        top: 15px;
-        right: 5px; } }
+        top: 11.4px;
+        right: 3.8px; } }
     .devices.devices-sm .scrollbar .scrollbar-trail {
       width: 7.5px;
       height: 262.5px;
@@ -600,10 +603,10 @@
       margin: 0 12px; }
       @media (max-width: 481px) {
         .devices.devices-sm .scrollbar .scrollbar-trail {
-          width: 5px;
-          height: 175px;
-          margin-right: 5px;
-          margin: 0 8px; } }
+          width: 3.8px;
+          height: 133px;
+          margin-right: 3.8px;
+          margin: 0 6.08px; } }
       .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab {
         position: absolute;
         top: 0px;
@@ -616,80 +619,80 @@
           .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab {
             position: absolute;
             top: 0px;
-            left: -3px;
-            width: 10.5px;
-            height: 10.5px;
-            border-radius: 10.5px;
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+            left: -2.28px;
+            width: 7.98px;
+            height: 7.98px;
+            border-radius: 7.98px;
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4); } }
       .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.positive {
         box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
         @media (max-width: 481px) {
           .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.positive {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
       .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.negative {
         box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
         @media (max-width: 481px) {
           .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.negative {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
       .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-progress {
         width: 7.5px; }
         @media (max-width: 481px) {
           .devices.devices-sm .scrollbar .scrollbar-trail .scrollbar-progress {
-            width: 5px; } }
+            width: 3.8px; } }
 
 .devices.devices-xs {
-  width: 400px;
-  height: 218.8px; }
+  width: 304px;
+  height: 166.288px; }
   .devices.devices-xs .monitor {
-    right: 5px;
-    width: 350px; }
+    right: 3.8px;
+    width: 266px; }
     .devices.devices-xs .monitor .monitor-container .monitor-screen {
       position: absolute;
-      top: 21px;
-      left: 41.5px;
-      height: 167.5px; }
+      top: 15.96px;
+      left: 31.54px;
+      height: 127.3px; }
   .devices.devices-xs .tablet {
     position: absolute;
-    top: 58.5px;
+    top: 44.46px;
     left: 0;
-    width: 221px; }
+    width: 167.96px; }
     .devices.devices-xs .tablet .tablet-container .tablet-screen {
       position: absolute;
-      top: 8.5px;
-      left: 24px;
-      height: 133px; }
+      top: 6.46px;
+      left: 18.24px;
+      height: 101.08px; }
   .devices.devices-xs .phone {
-    width: 60.5px;
+    width: 45.98px;
     position: absolute;
-    top: 90px;
-    left: 193.5px; }
+    top: 68.4px;
+    left: 147.06px; }
     .devices.devices-xs .phone .phone-container .phone-screen {
       position: absolute;
-      top: 20.5px;
-      left: 5px;
-      height: 77.5px; }
+      top: 15.58px;
+      left: 3.8px;
+      height: 58.9px; }
   .devices.devices-xs .scrollbar {
-    top: 15px;
-    right: 5px; }
+    top: 11.4px;
+    right: 3.8px; }
     .devices.devices-xs .scrollbar .scrollbar-trail {
-      width: 5px;
-      height: 175px;
-      margin-right: 5px;
-      margin: 0 8px; }
+      width: 3.8px;
+      height: 133px;
+      margin-right: 3.8px;
+      margin: 0 6.08px; }
       .devices.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab {
         position: absolute;
         top: 0px;
-        left: -3px;
-        width: 10.5px;
-        height: 10.5px;
-        border-radius: 10.5px;
-        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); }
+        left: -2.28px;
+        width: 7.98px;
+        height: 7.98px;
+        border-radius: 7.98px;
+        box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4); }
       .devices.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab.positive {
-        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
+        box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
       .devices.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab.negative {
-        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+        box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
       .devices.devices-xs .scrollbar .scrollbar-trail .scrollbar-progress {
-        width: 5px; }
+        width: 3.8px; }
 
 .devices.single-device {
   width: 875px; }
@@ -701,7 +704,7 @@
       width: 525px; } }
   @media (max-width: 481px) {
     .devices.single-device {
-      width: 350px; } }
+      width: 266px; } }
   .devices.single-device .monitor {
     right: 0;
     width: 100%; }
@@ -725,9 +728,9 @@
       @media (max-width: 481px) {
         .devices.single-device .monitor .monitor-container .monitor-screen {
           position: absolute;
-          top: 21px;
-          left: 41.5px;
-          height: 167.5px; } }
+          top: 15.96px;
+          left: 31.54px;
+          height: 127.3px; } }
   .devices.single-device .tablet {
     width: 810px;
     height: 547px;
@@ -745,8 +748,8 @@
         height: 328.2px; } }
     @media (max-width: 481px) {
       .devices.single-device .tablet {
-        width: 324px;
-        height: 218.8px; } }
+        width: 246.24px;
+        height: 166.288px; } }
     .devices.single-device .tablet .tablet-container .tablet-frame {
       width: auto;
       height: 547px; }
@@ -758,7 +761,7 @@
           height: 328.2px; } }
       @media (max-width: 481px) {
         .devices.single-device .tablet .tablet-container .tablet-frame {
-          height: 218.8px; } }
+          height: 166.288px; } }
     .devices.single-device .tablet .tablet-container .tablet-screen {
       position: absolute;
       top: 32.25px;
@@ -780,9 +783,9 @@
       @media (max-width: 481px) {
         .devices.single-device .tablet .tablet-container .tablet-screen {
           position: absolute;
-          top: 12.75px;
-          left: 35.2px;
-          height: 194.3px; } }
+          top: 9.69px;
+          left: 26.752px;
+          height: 147.668px; } }
   .devices.single-device .phone {
     width: 279.3px;
     height: 547px;
@@ -800,8 +803,8 @@
         height: 328.2px; } }
     @media (max-width: 481px) {
       .devices.single-device .phone {
-        width: 111.72px;
-        height: 218.8px; } }
+        width: 84.9072px;
+        height: 166.288px; } }
     .devices.single-device .phone .phone-container .phone-frame {
       width: auto;
       height: 547px; }
@@ -813,7 +816,7 @@
           height: 328.2px; } }
       @media (max-width: 481px) {
         .devices.single-device .phone .phone-container .phone-frame {
-          height: 218.8px; } }
+          height: 166.288px; } }
     .devices.single-device .phone .phone-container .phone-screen {
       position: absolute;
       top: 96.25px;
@@ -838,10 +841,10 @@
       @media (max-width: 481px) {
         .devices.single-device .phone .phone-container .phone-screen {
           position: absolute;
-          top: 38px;
-          left: 9.4px;
-          width: 94.4px;
-          height: 142.4px; } }
+          top: 28.88px;
+          left: 7.144px;
+          width: 71.744px;
+          height: 108.224px; } }
   .devices.single-device .scrollbar {
     top: 37.5px;
     right: 12.5px; }
@@ -855,8 +858,8 @@
         right: 7.5px; } }
     @media (max-width: 481px) {
       .devices.single-device .scrollbar {
-        top: 15px;
-        right: 5px; } }
+        top: 11.4px;
+        right: 3.8px; } }
     .devices.single-device .scrollbar .scrollbar-trail {
       width: 12.5px;
       height: 437.5px;
@@ -876,10 +879,10 @@
           margin: 0 12px; } }
       @media (max-width: 481px) {
         .devices.single-device .scrollbar .scrollbar-trail {
-          width: 5px;
-          height: 175px;
-          margin-right: 5px;
-          margin: 0 8px; } }
+          width: 3.8px;
+          height: 133px;
+          margin-right: 3.8px;
+          margin: 0 6.08px; } }
       .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab {
         position: absolute;
         top: 0px;
@@ -910,11 +913,11 @@
           .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab {
             position: absolute;
             top: 0px;
-            left: -3px;
-            width: 10.5px;
-            height: 10.5px;
-            border-radius: 10.5px;
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+            left: -2.28px;
+            width: 7.98px;
+            height: 7.98px;
+            border-radius: 7.98px;
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4); } }
       .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.positive {
         box-shadow: 0 1.25px 3.75px 1.25px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
         @media (max-width: 993px) {
@@ -925,7 +928,7 @@
             box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
         @media (max-width: 481px) {
           .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.positive {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
       .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.negative {
         box-shadow: 0 1.25px 3.75px 1.25px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
         @media (max-width: 993px) {
@@ -936,7 +939,7 @@
             box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
         @media (max-width: 481px) {
           .devices.single-device .scrollbar .scrollbar-trail .scrollbar-tab.negative {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
       .devices.single-device .scrollbar .scrollbar-trail .scrollbar-progress {
         width: 12.5px; }
         @media (max-width: 993px) {
@@ -947,7 +950,7 @@
             width: 7.5px; } }
         @media (max-width: 481px) {
           .devices.single-device .scrollbar .scrollbar-trail .scrollbar-progress {
-            width: 5px; } }
+            width: 3.8px; } }
   .devices.single-device .monitor + .tablet, .devices.single-device .monitor + .phone, .devices.single-device .tablet + .phone, .devices.single-device .tablet + .scrollbar, .devices.single-device .phone + .scrollbar {
     display: none; }
 
@@ -958,7 +961,7 @@
       width: 525px; } }
   @media (max-width: 481px) {
     .devices.single-device.devices-md {
-      width: 350px; } }
+      width: 266px; } }
   .devices.single-device.devices-md .monitor .monitor-container .monitor-screen {
     position: absolute;
     top: 42px;
@@ -973,9 +976,9 @@
     @media (max-width: 481px) {
       .devices.single-device.devices-md .monitor .monitor-container .monitor-screen {
         position: absolute;
-        top: 21px;
-        left: 41.5px;
-        height: 167.5px; } }
+        top: 15.96px;
+        left: 31.54px;
+        height: 127.3px; } }
   .devices.single-device.devices-md .tablet {
     width: 648px;
     height: 437.6px; }
@@ -985,8 +988,8 @@
         height: 328.2px; } }
     @media (max-width: 481px) {
       .devices.single-device.devices-md .tablet {
-        width: 324px;
-        height: 218.8px; } }
+        width: 246.24px;
+        height: 166.288px; } }
     .devices.single-device.devices-md .tablet .tablet-container .tablet-frame {
       height: 437.6px; }
       @media (max-width: 769px) {
@@ -994,7 +997,7 @@
           height: 328.2px; } }
       @media (max-width: 481px) {
         .devices.single-device.devices-md .tablet .tablet-container .tablet-frame {
-          height: 218.8px; } }
+          height: 166.288px; } }
     .devices.single-device.devices-md .tablet .tablet-container .tablet-screen {
       position: absolute;
       top: 25.8px;
@@ -1003,15 +1006,15 @@
       @media (max-width: 769px) {
         .devices.single-device.devices-md .tablet .tablet-container .tablet-screen {
           position: absolute;
-          top: 19.35px;
+          top: 19.125px;
           left: 52.8px;
-          height: 290.7px; } }
+          height: 291.45px; } }
       @media (max-width: 481px) {
         .devices.single-device.devices-md .tablet .tablet-container .tablet-screen {
           position: absolute;
-          top: 12.9px;
-          left: 35.2px;
-          height: 193.8px; } }
+          top: 9.69px;
+          left: 26.752px;
+          height: 147.668px; } }
   .devices.single-device.devices-md .phone {
     width: 223.44px;
     height: 437.6px; }
@@ -1021,8 +1024,8 @@
         height: 328.2px; } }
     @media (max-width: 481px) {
       .devices.single-device.devices-md .phone {
-        width: 111.72px;
-        height: 218.8px; } }
+        width: 84.9072px;
+        height: 166.288px; } }
     .devices.single-device.devices-md .phone .phone-container .phone-frame {
       height: 437.6px; }
       @media (max-width: 769px) {
@@ -1030,7 +1033,7 @@
           height: 328.2px; } }
       @media (max-width: 481px) {
         .devices.single-device.devices-md .phone .phone-container .phone-frame {
-          height: 218.8px; } }
+          height: 166.288px; } }
     .devices.single-device.devices-md .phone .phone-container .phone-screen {
       position: absolute;
       top: 77px;
@@ -1040,17 +1043,17 @@
       @media (max-width: 769px) {
         .devices.single-device.devices-md .phone .phone-container .phone-screen {
           position: absolute;
-          top: 57.75px;
+          top: 57px;
           left: 14.1px;
           width: 141.6px;
-          height: 212.85px; } }
+          height: 213.6px; } }
       @media (max-width: 481px) {
         .devices.single-device.devices-md .phone .phone-container .phone-screen {
           position: absolute;
-          top: 38.5px;
-          left: 9.4px;
-          width: 94.4px;
-          height: 141.9px; } }
+          top: 28.88px;
+          left: 7.144px;
+          width: 71.744px;
+          height: 108.224px; } }
   .devices.single-device.devices-md .scrollbar {
     top: 30px;
     right: 10px; }
@@ -1060,8 +1063,8 @@
         right: 7.5px; } }
     @media (max-width: 481px) {
       .devices.single-device.devices-md .scrollbar {
-        top: 15px;
-        right: 5px; } }
+        top: 11.4px;
+        right: 3.8px; } }
     .devices.single-device.devices-md .scrollbar .scrollbar-trail {
       width: 10px;
       height: 350px;
@@ -1075,10 +1078,10 @@
           margin: 0 12px; } }
       @media (max-width: 481px) {
         .devices.single-device.devices-md .scrollbar .scrollbar-trail {
-          width: 5px;
-          height: 175px;
-          margin-right: 5px;
-          margin: 0 8px; } }
+          width: 3.8px;
+          height: 133px;
+          margin-right: 3.8px;
+          margin: 0 6.08px; } }
       .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab {
         position: absolute;
         top: 0px;
@@ -1100,11 +1103,11 @@
           .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab {
             position: absolute;
             top: 0px;
-            left: -3px;
-            width: 10.5px;
-            height: 10.5px;
-            border-radius: 10.5px;
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+            left: -2.28px;
+            width: 7.98px;
+            height: 7.98px;
+            border-radius: 7.98px;
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4); } }
       .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.positive {
         box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
         @media (max-width: 769px) {
@@ -1112,7 +1115,7 @@
             box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
         @media (max-width: 481px) {
           .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.positive {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
       .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.negative {
         box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
         @media (max-width: 769px) {
@@ -1120,7 +1123,7 @@
             box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
         @media (max-width: 481px) {
           .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-tab.negative {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
       .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-progress {
         width: 10px; }
         @media (max-width: 769px) {
@@ -1128,13 +1131,13 @@
             width: 7.5px; } }
         @media (max-width: 481px) {
           .devices.single-device.devices-md .scrollbar .scrollbar-trail .scrollbar-progress {
-            width: 5px; } }
+            width: 3.8px; } }
 
 .devices.single-device.devices-sm {
   width: 525px; }
   @media (max-width: 481px) {
     .devices.single-device.devices-sm {
-      width: 350px; } }
+      width: 266px; } }
   .devices.single-device.devices-sm .monitor .monitor-container .monitor-screen {
     position: absolute;
     top: 31.5px;
@@ -1143,21 +1146,21 @@
     @media (max-width: 481px) {
       .devices.single-device.devices-sm .monitor .monitor-container .monitor-screen {
         position: absolute;
-        top: 21px;
-        left: 41.5px;
-        height: 167.5px; } }
+        top: 15.96px;
+        left: 31.54px;
+        height: 127.3px; } }
   .devices.single-device.devices-sm .tablet {
     width: 486px;
     height: 328.2px; }
     @media (max-width: 481px) {
       .devices.single-device.devices-sm .tablet {
-        width: 324px;
-        height: 218.8px; } }
+        width: 246.24px;
+        height: 166.288px; } }
     .devices.single-device.devices-sm .tablet .tablet-container .tablet-frame {
       height: 328.2px; }
       @media (max-width: 481px) {
         .devices.single-device.devices-sm .tablet .tablet-container .tablet-frame {
-          height: 218.8px; } }
+          height: 166.288px; } }
     .devices.single-device.devices-sm .tablet .tablet-container .tablet-screen {
       position: absolute;
       top: 19.35px;
@@ -1166,21 +1169,21 @@
       @media (max-width: 481px) {
         .devices.single-device.devices-sm .tablet .tablet-container .tablet-screen {
           position: absolute;
-          top: 12.9px;
-          left: 35.2px;
-          height: 193.8px; } }
+          top: 9.69px;
+          left: 26.752px;
+          height: 147.668px; } }
   .devices.single-device.devices-sm .phone {
     width: 167.58px;
     height: 328.2px; }
     @media (max-width: 481px) {
       .devices.single-device.devices-sm .phone {
-        width: 111.72px;
-        height: 218.8px; } }
+        width: 84.9072px;
+        height: 166.288px; } }
     .devices.single-device.devices-sm .phone .phone-container .phone-frame {
       height: 328.2px; }
       @media (max-width: 481px) {
         .devices.single-device.devices-sm .phone .phone-container .phone-frame {
-          height: 218.8px; } }
+          height: 166.288px; } }
     .devices.single-device.devices-sm .phone .phone-container .phone-screen {
       position: absolute;
       top: 57.75px;
@@ -1190,17 +1193,17 @@
       @media (max-width: 481px) {
         .devices.single-device.devices-sm .phone .phone-container .phone-screen {
           position: absolute;
-          top: 38.5px;
-          left: 9.4px;
-          width: 94.4px;
-          height: 141.9px; } }
+          top: 28.88px;
+          left: 7.144px;
+          width: 71.744px;
+          height: 108.224px; } }
   .devices.single-device.devices-sm .scrollbar {
     top: 22.5px;
     right: 7.5px; }
     @media (max-width: 481px) {
       .devices.single-device.devices-sm .scrollbar {
-        top: 15px;
-        right: 5px; } }
+        top: 11.4px;
+        right: 3.8px; } }
     .devices.single-device.devices-sm .scrollbar .scrollbar-trail {
       width: 7.5px;
       height: 262.5px;
@@ -1208,10 +1211,10 @@
       margin: 0 12px; }
       @media (max-width: 481px) {
         .devices.single-device.devices-sm .scrollbar .scrollbar-trail {
-          width: 5px;
-          height: 175px;
-          margin-right: 5px;
-          margin: 0 8px; } }
+          width: 3.8px;
+          height: 133px;
+          margin-right: 3.8px;
+          margin: 0 6.08px; } }
       .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab {
         position: absolute;
         top: 0px;
@@ -1224,85 +1227,85 @@
           .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab {
             position: absolute;
             top: 0px;
-            left: -3px;
-            width: 10.5px;
-            height: 10.5px;
-            border-radius: 10.5px;
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); } }
+            left: -2.28px;
+            width: 7.98px;
+            height: 7.98px;
+            border-radius: 7.98px;
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4); } }
       .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.positive {
         box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
         @media (max-width: 481px) {
           .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.positive {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); } }
       .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.negative {
         box-shadow: 0 0.75px 2.25px 0.75px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
         @media (max-width: 481px) {
           .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-tab.negative {
-            box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
+            box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); } }
       .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-progress {
         width: 7.5px; }
         @media (max-width: 481px) {
           .devices.single-device.devices-sm .scrollbar .scrollbar-trail .scrollbar-progress {
-            width: 5px; } }
+            width: 3.8px; } }
 
 .devices.single-device.devices-xs {
-  width: 350px; }
+  width: 266px; }
   .devices.single-device.devices-xs .monitor .monitor-container .monitor-screen {
     position: absolute;
-    top: 21px;
-    left: 41.5px;
-    height: 167.5px; }
+    top: 15.96px;
+    left: 31.54px;
+    height: 127.3px; }
   .devices.single-device.devices-xs .tablet {
-    width: 324px;
-    height: 218.8px;
+    width: 246.24px;
+    height: 166.288px;
     position: absolute;
     top: 0px;
     left: 50%;
     transform: translateX(-50%); }
     .devices.single-device.devices-xs .tablet .tablet-container .tablet-frame {
       width: auto;
-      height: 218.8px; }
+      height: 166.288px; }
     .devices.single-device.devices-xs .tablet .tablet-container .tablet-screen {
       position: absolute;
-      top: 12.9px;
-      left: 35.2px;
-      height: 193.8px; }
+      top: 9.69px;
+      left: 26.752px;
+      height: 147.668px; }
   .devices.single-device.devices-xs .phone {
-    width: 111.72px;
-    height: 218.8px; }
+    width: 84.9072px;
+    height: 166.288px; }
     @media (max-width: 481px) {
       .devices.single-device.devices-xs .phone {
-        width: 111.72px;
-        height: 218.8px; } }
+        width: 84.9072px;
+        height: 166.288px; } }
     .devices.single-device.devices-xs .phone .phone-container .phone-frame {
-      height: 218.8px; }
+      height: 166.288px; }
     .devices.single-device.devices-xs .phone .phone-container .phone-screen {
       position: absolute;
-      top: 38.5px;
-      left: 9.4px;
-      width: 94.4px;
-      height: 141.9px; }
+      top: 28.88px;
+      left: 7.144px;
+      width: 71.744px;
+      height: 108.224px; }
   .devices.single-device.devices-xs .scrollbar {
-    top: 15px;
-    right: 5px; }
+    top: 11.4px;
+    right: 3.8px; }
     .devices.single-device.devices-xs .scrollbar .scrollbar-trail {
-      width: 5px;
-      height: 175px;
-      margin-right: 5px;
-      margin: 0 8px; }
+      width: 3.8px;
+      height: 133px;
+      margin-right: 3.8px;
+      margin: 0 6.08px; }
       .devices.single-device.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab {
         position: absolute;
         top: 0px;
-        left: -3px;
-        width: 10.5px;
-        height: 10.5px;
-        border-radius: 10.5px;
-        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4); }
+        left: -2.28px;
+        width: 7.98px;
+        height: 7.98px;
+        border-radius: 7.98px;
+        box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4); }
       .devices.single-device.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab.positive {
-        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
+        box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(38, 166, 154, 0.1); }
       .devices.single-device.devices-xs .scrollbar .scrollbar-trail .scrollbar-tab.negative {
-        box-shadow: 0 0.5px 1.5px 0.5px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
+        box-shadow: 0 0.38px 1.14px 0.38px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(0, 0, 0, 0.08); }
       .devices.single-device.devices-xs .scrollbar .scrollbar-trail .scrollbar-progress {
-        width: 5px; }
+        width: 3.8px; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=dragDevices.css.map */

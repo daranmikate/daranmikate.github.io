@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!--Import Google Icon Font-->
-	<link href="../public/css/icon.css" rel="stylesheet" media="screen,projection"/>
+	<!-- <link href="../public/css/icon.css" rel="stylesheet" media="screen,projection"/> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Fonts Customized-->
     <link href="https://www.fontify.me/wf/4ca8ed90521f312223a3f971f2ea2c5c" rel="stylesheet" type="text/css"/>
     <link href="https://www.fontify.me/wf/1c03ec201adffa36bd65b8452a87ae56" rel="stylesheet" type="text/css"/>
@@ -21,12 +22,8 @@
     <link href="../public/slick/slick.css" rel="stylesheet" media="screen,projection"/>
     <link href="../public/slick/slick-theme.css" rel="stylesheet" media="screen,projection"/>
 
-    <!--Import Owl Carousel -->
-    <link href="../public/css/owl.carousel.min.css" rel="stylesheet" media="screen,projection"/>
-    <link href="../public/css/owl.theme.default.min.css" rel="stylesheet" media="screen,projection"/>
-
     <!-- For Favicon (Logo) -->
-    <link rel="icon" type="image/png" href="../public/img/heart.png">
+    <link rel="icon" type="image/png" href="../public/img/heart .png">
 
     <!--CSS-->
     <link href="../public/css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -36,7 +33,7 @@
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body class="scrollbar">
+<body id="style-5">
 	<div class="navbar-fixed">
 		<nav>
 		  <div class="nav-wrapper">
@@ -87,7 +84,7 @@
 					<div class="col m12 l6 pic-pic">
 						<img class="pic" src="../public/img/pic.png"/>
 					</div>
-					<div class="col m12 l6">
+					<div class="col m12 l6 about-info">
 						<p class="about-text">Hello! I’m Kate Andrea Miranda. A 20 year old Web App Developer 
 						specializing in front-end and back-end development, based in Tarlac, 
 						Philippines. I am a graduate of Bachelor of Science in Information
@@ -107,14 +104,13 @@
 				</div>
 			</div>
 		</div>
-		<hr>
 		
 		<div id="skills" class="scrollspy">
 			<div class="row front-end">
-				<div class="col s4 center skill-1">
+				<div class="col s12 m4 center skill-1">
 					Front End Development
 				</div>
-				<div class="col s8 carousel-1">
+				<div class="col s12 m8 carousel-1">
 				    <div class="regular slide">
 					    <div>
 					      	<img src="../public/img/logo/html.png">
@@ -153,10 +149,10 @@
 				</div>
 			</div>
 			<div class="row back-end">
-				<div class="col s4 center skill-2">
+				<div class="col s12 m4 center skill-2">
 					Back End Development
 				</div>
-				<div class="col s8 carousel-2">
+				<div class="col s12 m8 carousel-2">
 				    <div class="regular slide">
 					    <div>
 					      	<img src="../public/img/logo/php.png">
@@ -183,10 +179,10 @@
 				</div>
 			</div>
 			<div class="row app-tools">
-				<div class="col s4 center skill-3">
+				<div class="col s12 m4 center skill-3">
 					Application Tools
 				</div>
-				<div class="col s8 carousel-3">
+				<div class="col s12 m8 carousel-3">
 				    <div class="regular slide">
 					    <div>
 					      	<img src="../public/img/logo/github.png">
@@ -219,11 +215,12 @@
 		<div id="works" class="scrollspy">
 			<div class="title"><p class="works center">works</p></div class="title">
 			<div class="row">
-			  <div class="col s12">
+			  <div class="col m12 tab-list">
 			    <ul class="tabs">
-			      <li class="tab col s4"><a class="active" href="#church">Church In Tarlac</a></li>
-			      <li class="tab col s4"><a href="#dti">DTI</a></li>
-			      <li class="tab col s4"><a href="#tcvb">TCVB</a></li>
+			      <li class="tab col s12 m3"><a class="active" href="#church">Church In Tarlac</a></li>
+			      <li class="tab col s12 m3"><a href="#dti">DTI</a></li>
+			      <li class="tab col s12 m3"><a href="#tcvb">TCVB</a></li>
+			      <li class="tab col s12 m3"><a href="#portfolio">My Portfolio</a></li>
 			    </ul>
 			  </div>
 			  <!-- Church in Tarlac -->
@@ -380,6 +377,66 @@
 			  	</section>
 			  </div>
 			  <!-- End TCVB -->
+			  <!-- My Portfolio -->
+			  <div id="portfolio" class="col s12">
+			  	<div class="portfolio">
+			  		<ul>
+			  			<li>ROLE <span class="semibold">ALL</span></li>
+			  			<li>CONTEXT <span class="semibold">SIDE-PROJECT</span></li>
+			  			<li>DATE <span class="semibold">MAY 28</span></li>
+			  			<li>PLATFORMS <span class="semibold">RESPONSIVE</span></li>
+			  		</ul>
+			  	</div>
+			  	<p class="description">
+				  	A Personal Portfolio
+			  	</p>
+				<div class="devices devices-md">
+					<div class="monitor">
+						<div class="monitor-container">
+							<img src="../public/img/devices/laptop.png" class="monitor-frame">
+							<div class="monitor-screen">
+								<img src="../public/img/devices/portfolio-laptop.png" class="monitor-view">
+							</div>
+						</div>
+					</div>
+					<div class="tablet">
+						<div class="tablet-container">
+							<img src="../public/img/devices/ipad.png" class="tablet-frame">
+							<div class="tablet-screen">
+								<img src="../public/img/devices/portfolio-ipad.png" class="tablet-view">
+							</div>
+						</div>
+					</div>
+					<div class="phone">
+						<div class="phone-container">
+							<img src="../public/img/devices/iphone.png" class="phone-frame">
+							<div class="phone-screen">
+								<img src="../public/img/devices/portfolio-cp.png" class="phone-view">
+							</div>
+						</div>
+					</div>
+					<div class="scrollbar">
+						<div class="scrollbar-trail">
+							<div class="scrollbar-progress"></div>
+							<div class="scrollbar-tab"></div>
+						</div>
+					</div>
+				</div>
+			  	<section class="application">
+			  		<h4>We use for this project :</h4>
+			  		<ul>
+			  			<li>JavaScript</li>
+			  			<li>JQuery</li>
+			  			<li>APIs</li>
+			  			<li>HTML5</li>
+			  			<li>CSS3</li>
+			  			<li>Sass</li>
+			  			<li>Materialize</li>
+			  		</ul>
+			  		<a class="btn view" href="http://www.dti.mytabworks.com" rel="nofollow" target="_blank">View Site</a>
+			  	</section>
+			  </div>
+			  <!-- End DTI -->
 			</div>
 		</div>
 	</div>
@@ -404,7 +461,6 @@
 	<!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="../public/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="../public/js/materialize.min.js"></script>
-    <script type="text/javascript" src="../public/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="../public/js/slick.min.js"></script>
     <script type="text/javascript" src="../public/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../public/js/dragDevices.js"></script>
@@ -412,6 +468,8 @@
     	$(".button-collapse").sideNav();
 
     	$(document).ready(function(){
+    		$('.parallax').parallax();
+
     		$('.scrollspy').scrollSpy({scrollOffset:100});
 		    $('ul.tabs').tabs({
 		    	onShow:function(el){
@@ -425,11 +483,35 @@
 		 $(".regular").slick({
 	        dots: true,
 	        infinite: true,
-	        slidesToShow: 4,
-	        slidesToScroll: 1,
 	        autoplay: true,
 	        autoplaySpeed: 3000,
 	        loop: true,
+	        slidesToShow: 4,
+	        slidesToScroll: 1,
+	        responsive: [
+			    {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 3,
+			        infinite: true,
+			        dots: true
+			      }
+			    },
+			    {
+			      breakpoint: 600,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 2
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1
+			      }
+			    }]
 	      });
 		});
 

@@ -1,0 +1,1386 @@
+$primary-color : #fcfcfc;
+$devices-main : 1.25;
+$devices-sm : 0.75;
+$devices-xs : 0.38;
+$devices-width: 800px;
+$devices-height:437.6px;
+@mixin p-absolute($top,$left) {
+  position:absolute;
+  top: $top;
+  left: $left;
+}
+@mixin media-max($width) {
+  	@media(max-width: $width) {
+  		@content;
+  	}
+}
+body{
+	background-color: $primary-color;
+}
+.epicenter{
+	transform:translate(-50%,-50%);
+}
+.user-select{
+	-webkit-user-select: none; /* Prevents selecting text or tags */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none; /* Prevents dragging of images/divs etc */
+    user-drag: none;
+}
+
+.devices { 
+	display:block;
+	height:$devices-height * $devices-main;
+	width:$devices-width * $devices-main;
+	margin: 0 auto 0 auto;
+	margin-bottom:20px;
+	position:relative;
+	@include media-max(993px){
+		width:$devices-width;
+		height:$devices-height;
+	}
+	@include media-max(769px){
+		width:$devices-width * $devices-sm;
+		height:$devices-height * $devices-sm;
+	}
+	@include media-max(481px){
+		width:$devices-width * $devices-xs;
+		height:$devices-height * $devices-xs;
+	}
+	img{
+		@extend .user-select;
+	}
+	.monitor {
+		@include p-absolute(0,0);
+		left:auto;
+		right:10px * $devices-main;  
+		height:auto;	
+		width:700px * $devices-main;
+		@include media-max(993px){
+			right:10px;
+			width:700px
+		}
+		@include media-max(769px){
+			right:10px * $devices-sm;
+			width:700px * $devices-sm;
+		}
+		@include media-max(481px){
+			right:10px * $devices-xs;
+			width:700px * $devices-xs;
+		}
+		.monitor-container{ 
+			position:relative;
+			background:#fcfcfc; 
+
+			.monitor-frame {
+				width:100%;
+				height:auto;
+				@include p-absolute(0,0);
+			}
+			
+			.monitor-screen {
+				@include p-absolute(42px * $devices-main,83px * $devices-main);  
+				@extend .user-select; 
+				width:76.4%;
+				height:335px * $devices-main;
+				overflow:hidden;
+				@include media-max(993px){
+					@include p-absolute(42px,83px); 
+					height:335px;
+				}
+				@include media-max(769px){
+					@include p-absolute(42px * $devices-sm,83px * $devices-sm); 
+					height:335px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(42px * $devices-xs,83px * $devices-xs); 
+					height:335px * $devices-xs;
+				}
+				.monitor-view{ 
+					@extend .user-select;
+					width:100%;
+					height:auto; 
+				}
+
+			} 
+		}
+	}
+
+	.tablet{
+		@include p-absolute(117px * $devices-main,0);
+		height:auto;
+		width:442px * $devices-main;
+		@include media-max(993px){
+			@include p-absolute(117px,0);
+			width:442px;
+		}
+		@include media-max(769px){
+			@include p-absolute(117px * $devices-sm,0);
+			width:442px * $devices-sm;
+		}
+		@include media-max(481px){
+			@include p-absolute(117px * $devices-xs,0);
+			width:442px * $devices-xs;
+		}		
+		.tablet-container{ 
+			position:relative;
+			background:transparent; 
+			.tablet-frame{
+				width:100%;
+				height:auto;
+				@include p-absolute(0,0);
+			}
+			.tablet-screen{
+				@include p-absolute(17px * $devices-main,48px * $devices-main);
+				@extend .user-select; 
+				width:79.7%;
+				height:266px * $devices-main;
+				overflow:hidden;
+				@include media-max(993px){
+					@include p-absolute(17px,48px);
+					height:266px;
+				}
+				@include media-max(769px){
+					@include p-absolute((17px * $devices-sm) + 0.25,48px * $devices-sm);
+					height:266px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(17px * $devices-xs,48px * $devices-xs);
+					height:266px * $devices-xs;
+				}	
+				.tablet-view{ 
+					@extend .user-select;
+					width:100%;
+					height:auto; 
+				}
+			}
+		}
+	}
+
+	.phone{
+		height:auto;
+		width:121px * $devices-main;
+		@include p-absolute(180px * $devices-main,387px * $devices-main);
+		@include media-max(993px){
+			@include p-absolute(180px,387px);
+			width:121px;
+		}
+		@include media-max(769px){
+			@include p-absolute(180px * $devices-sm,387px * $devices-sm);
+			width:121px * $devices-sm;
+		}
+		@include media-max(481px){
+			@include p-absolute(180px * $devices-xs,387px * $devices-xs);
+			width:121px * $devices-xs;
+		}
+		.phone-container{ 
+			position:relative;
+			background:transparent; 
+			.phone-frame{
+				width:100%;
+				height:auto;
+				@include p-absolute(0,0);
+			}
+			.phone-screen{
+				@include p-absolute(41px * $devices-main,10px * $devices-main);
+				@extend .user-select; 
+				width:85.2%;
+				height:155px * $devices-main;
+				overflow:hidden;
+				@include media-max(993px){
+					@include p-absolute(41px,10px);
+					height:155px;
+				}
+				@include media-max(769px){
+					@include p-absolute(41px * $devices-sm,10px * $devices-sm);
+					height:155px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(41px * $devices-xs,10px * $devices-xs);
+					height:155px * $devices-xs;
+				}
+				.phone-view{ 
+					@extend .user-select;
+					width:100%;
+					height:auto; 
+				}
+			}
+		}
+	}
+
+	.scrollbar {
+		top:30px * $devices-main;right:10px * $devices-main;
+		position:absolute;
+		@include media-max(993px){
+			top:30px;right:10px;
+		}
+		@include media-max(769px){
+			top:30px * $devices-sm;right:10px * $devices-sm;
+		}
+		@include media-max(481px){
+			top:30px * $devices-xs;right:10px * $devices-xs;
+		}
+		.scrollbar-trail {  
+    			display: inline-block;
+    			position: relative;
+    			width: 10px * $devices-main;
+    			height: 350px * $devices-main;
+    			background-color: #818181;
+    			border-radius: 15px;
+    			margin-right: 10px * $devices-main; 
+    			vertical-align: middle;
+    			margin: 0 (16px * $devices-main);
+    			@include media-max(993px){
+					width: 10px;
+    				height: 350px;
+    				margin-right: 10px;
+    				margin: 0 (16px);
+
+				}
+				@include media-max(769px){
+					width: 10px * $devices-sm;
+    				height: 350px * $devices-sm;
+    				margin-right: 10px * $devices-sm;
+    				margin: 0 (16px * $devices-sm);
+				}
+				@include media-max(481px){
+					width: 10px * $devices-xs;
+    				height: 350px * $devices-xs;
+    				margin-right: 10px * $devices-xs;
+    				margin: 0 (16px * $devices-xs);
+				}
+			.scrollbar-tab {
+					@include p-absolute(0px,-6px * $devices-main); 
+    				display: inline-block;
+    				cursor:pointer;
+    				width: 21px * $devices-main;
+   					height: 21px * $devices-main;
+    				background-color: #F1F1F1;
+    				border-radius: 21px * $devices-main;
+    				box-shadow: 0 (1px * $devices-main) (3px * $devices-main) (1px * $devices-main) rgba(0,0,0,0.4);
+    				transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;
+    				@include media-max(993px){
+						@include p-absolute(0px,-6px); 
+						width: 21px;
+   						height: 21px;
+   						border-radius: 21px;
+    					box-shadow: 0 (1px) (3px) (1px) rgba(0,0,0,0.4);
+					}
+					@include media-max(769px){
+						@include p-absolute(0px,-6px * $devices-sm); 
+						width: 21px * $devices-sm;
+   						height: 21px * $devices-sm;
+   						border-radius: 21px * $devices-sm;
+    					box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4);
+					}
+					@include media-max(481px){
+						@include p-absolute(0px,-6px * $devices-xs); 
+						width: 21px * $devices-xs;
+   						height: 21px * $devices-xs;
+   						border-radius: 21px * $devices-xs;
+    					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4);
+					}
+
+			}
+			.scrollbar-tab.positive {
+					background-color: #26a69a;
+					box-shadow: 0 (1px * $devices-main) (3px * $devices-main) (1px * $devices-main) rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					@include media-max(993px){
+						box-shadow: 0 (1px) (3px) (1px) rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+					@include media-max(769px){
+						box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+					@include media-max(481px){
+    					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+			}
+			.scrollbar-tab.negative {
+					background-color: #F1F1F1;
+					box-shadow: 0 (1px * $devices-main) (3px * $devices-main) (1px * $devices-main) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					@include media-max(993px){
+						box-shadow: 0 (1px) (3px) (1px) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+					@include media-max(769px){
+						box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+					@include media-max(481px){
+    					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+			}
+			.scrollbar-progress {
+    				display: inline-block;
+					background-color: #84c7c1;
+					width: 10px * $devices-main; 
+					border-radius: 15px;
+					@include media-max(993px){
+						width: 10px; 
+					}
+					@include media-max(769px){
+						width: 10px * $devices-sm; 
+					}
+					@include media-max(481px){
+    					width: 10px * $devices-xs; 
+					}
+			}
+		}
+	}
+}
+
+.devices.devices-md { 	
+	width:$devices-width; 
+	height:$devices-height;
+	@include media-max(769px){
+		width:$devices-width * $devices-sm;
+		height:$devices-height * $devices-sm;
+	}
+	@include media-max(481px){
+		width:$devices-width * $devices-xs;
+		height:$devices-height * $devices-xs;
+	}
+	.monitor {  
+		right:10px;  
+		width:700px;
+		@include media-max(769px){
+			right:10px * $devices-sm;
+			width:700px * $devices-sm;
+		}
+		@include media-max(481px){
+			right:10px * $devices-xs;
+			width:700px * $devices-xs;
+		}
+		.monitor-container{ 
+			
+			.monitor-screen {
+				@include p-absolute(42px,83px);
+				height:335px;
+				@include media-max(769px){
+					@include p-absolute(42px * $devices-sm,83px * $devices-sm); 
+					height:335px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(42px * $devices-xs,83px * $devices-xs); 
+					height:335px * $devices-xs;
+				}
+			} 
+		}
+	}
+
+	.tablet{
+		@include p-absolute(117px,0);
+		width:442px;
+		@include media-max(769px){
+			@include p-absolute(117px * $devices-sm,0);
+			width:442px * $devices-sm;
+		}
+		@include media-max(481px){
+			@include p-absolute(117px * $devices-xs,0);
+			width:442px * $devices-xs;
+		}
+		.tablet-container{ 
+
+			.tablet-screen{
+				@include p-absolute(17px,48px);
+				height:266px; 
+				@include media-max(769px){
+					@include p-absolute((17px * $devices-sm) + 0.25,48px * $devices-sm);
+					height:266px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(17px * $devices-xs,48px * $devices-xs);
+					height:266px * $devices-xs;
+				}
+			}
+		}
+	}
+
+	.phone{
+		width:121px;
+		@include p-absolute(180px,387px);
+		@include media-max(769px){
+			@include p-absolute(180px * $devices-sm,387px * $devices-sm);
+			width:121px * $devices-sm;
+		}
+		@include media-max(481px){
+			@include p-absolute(180px * $devices-xs,387px * $devices-xs);
+			width:121px * $devices-xs;
+		}
+		.phone-container{ 
+			.phone-screen{
+				@include p-absolute(41px,10px);
+				height:155px;
+				@include media-max(769px){
+					@include p-absolute(41px * $devices-sm,10px * $devices-sm);
+					height:155px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(41px * $devices-xs,10px * $devices-xs);
+					height:155px * $devices-xs;
+				}
+			}
+		}
+	}
+
+	.scrollbar { 
+		top:30px;right:10px; 
+		@include media-max(769px){
+			top:30px * $devices-sm;right:10px * $devices-sm;
+		}
+		@include media-max(481px){
+			top:30px * $devices-xs;right:10px * $devices-xs;
+		}
+		.scrollbar-trail {    
+    			width: 10px;
+    			height: 350px;  
+    			margin-right: 10px;  
+    			margin: 0 16px;
+    			@include media-max(769px){
+					width: 10px * $devices-sm;
+    				height: 350px * $devices-sm;
+    				margin-right: 10px * $devices-sm;
+    				margin: 0 (16px * $devices-sm);
+				}
+				@include media-max(481px){
+					width: 10px * $devices-xs;
+    				height: 350px * $devices-xs;
+    				margin-right: 10px * $devices-xs;
+    				margin: 0 (16px * $devices-xs);
+				}
+			.scrollbar-tab {
+					@include p-absolute(0px,-6px); 
+    				width: 21px;
+   					height: 21px;
+    				border-radius: 21px;
+    				box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4);
+    				@include media-max(769px){
+						@include p-absolute(0px,-6px * $devices-sm); 
+						width: 21px * $devices-sm;
+   						height: 21px * $devices-sm;
+   						border-radius: 21px * $devices-sm;
+    					box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4);
+					}
+					@include media-max(481px){
+						@include p-absolute(0px,-6px * $devices-xs); 
+						width: 21px * $devices-xs;
+   						height: 21px * $devices-xs;
+   						border-radius: 21px * $devices-xs;
+    					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4);
+					}
+			}
+			.scrollbar-tab.positive {
+					box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					@include media-max(769px){
+						box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+					@include media-max(481px){
+    					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+			}
+			.scrollbar-tab.negative {
+					box-shadow: 0 1px 3px 1px rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					@include media-max(769px){
+						box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+					@include media-max(481px){
+    					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+			}
+			.scrollbar-progress {
+					width: 10px; 
+					@include media-max(769px){
+						width: 10px * $devices-sm; 
+					}
+					@include media-max(481px){
+    					width: 10px * $devices-xs; 
+					}
+			}
+		}
+	}
+}
+
+.devices.devices-sm { 	
+	width:$devices-width * $devices-sm; 
+	height:$devices-height * $devices-sm;
+	@include media-max(481px){
+		width:$devices-width * $devices-xs;
+		height:$devices-height * $devices-xs;
+	}
+	.monitor { 
+		right:10px * $devices-sm;  
+		width:700px * $devices-sm; 
+		@include media-max(481px){
+			right:10px * $devices-xs;
+			width:700px * $devices-xs;
+		}
+		.monitor-container{ 
+			
+			.monitor-screen {
+				@include p-absolute(42px * $devices-sm,83px * $devices-sm);
+				height:335px * $devices-sm; 
+				@include media-max(481px){
+					@include p-absolute(42px * $devices-xs,83px * $devices-xs); 
+					height:335px * $devices-xs;
+				}
+
+			} 
+		}
+	}
+
+	.tablet{
+		@include p-absolute(117px * $devices-sm,0);
+		width:442px * $devices-sm;
+
+		@include media-max(481px){
+			@include p-absolute(117px * $devices-xs,0);
+			width:442px * $devices-xs;
+		}
+		.tablet-container{ 
+
+			.tablet-screen{
+				@include p-absolute((17px * $devices-sm) + 0.25,48px * $devices-sm);
+				height:266px * $devices-sm;
+				@include media-max(481px){
+					@include p-absolute(17px * $devices-xs,48px * $devices-xs);
+					height:266px * $devices-xs;
+				}
+			}
+		}
+	}
+
+	.phone{
+		width:121px * $devices-sm;
+		@include p-absolute(180px * $devices-sm,387px * $devices-sm);
+		@include media-max(481px){
+			@include p-absolute(180px * $devices-xs,387px * $devices-xs);
+			width:121px * $devices-xs;
+		}
+		.phone-container{ 
+			.phone-screen{
+				@include p-absolute(41px * $devices-sm,10px * $devices-sm);
+				height:155px * $devices-sm;
+
+				@include media-max(481px){
+					@include p-absolute(41px * $devices-xs,10px * $devices-xs);
+					height:155px * $devices-xs;
+				}
+			}
+		}
+	}
+	
+	.scrollbar { 
+		top:30px  * $devices-sm;right:10px * $devices-sm; 
+
+		@include media-max(481px){
+			top:30px * $devices-xs;right:10px * $devices-xs;
+		}
+		.scrollbar-trail {    
+    			width: 10px * $devices-sm;
+    			height: 350px * $devices-sm;  
+    			margin-right: 10px * $devices-sm;  
+    			margin: 0 16px * $devices-sm;
+
+				@include media-max(481px){
+					width: 10px * $devices-xs;
+    				height: 350px * $devices-xs;
+    				margin-right: 10px * $devices-xs;
+    				margin: 0 (16px * $devices-xs);
+				}
+			.scrollbar-tab {
+					@include p-absolute(0px,-6px * $devices-sm); 
+    				width: 21px * $devices-sm;
+   					height: 21px * $devices-sm;
+    				border-radius: 21px * $devices-sm;
+    				box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4);
+ 					@include media-max(481px){
+						@include p-absolute(0px,-6px * $devices-xs); 
+						width: 21px * $devices-xs;
+   						height: 21px * $devices-xs;
+   						border-radius: 21px * $devices-xs;
+    					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4);
+					}
+			}
+			.scrollbar-tab.positive {
+					box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px  * $devices-sm) rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+
+					@include media-max(481px){
+    					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+			}
+			.scrollbar-tab.negative {
+					box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					 
+					@include media-max(481px){
+    					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+			}
+			.scrollbar-progress {
+					width: 10px * $devices-sm;  
+					@include media-max(481px){
+    					width: 10px * $devices-xs; 
+					}
+			}
+		}
+	}
+}
+
+.devices.devices-xs { 	
+	width:$devices-width * $devices-xs;
+	height:$devices-height * $devices-xs;
+	.monitor { 
+		right:10px * $devices-xs;  
+		width:700px * $devices-xs;
+		.monitor-container{ 
+			
+			.monitor-screen {
+				@include p-absolute(42px * $devices-xs,83px * $devices-xs);
+				height:335px * $devices-xs;
+
+			} 
+		}
+	}
+
+	.tablet{
+		@include p-absolute(117px * $devices-xs,0);
+		width:442px * $devices-xs;
+		.tablet-container{ 
+
+			.tablet-screen{
+				@include p-absolute(17px * $devices-xs,48px * $devices-xs);
+				height:266px * $devices-xs;
+			}
+		}
+	}
+
+	.phone{
+		width:121px * $devices-xs;
+		@include p-absolute(180px * $devices-xs,387px * $devices-xs);
+		.phone-container{ 
+			.phone-screen{
+				@include p-absolute(41px * $devices-xs,10px * $devices-xs);
+				height:155px * $devices-xs;
+			}
+		}
+	}
+	
+	.scrollbar { 
+		top:30px  * $devices-xs;right:10px * $devices-xs; 
+		.scrollbar-trail {    
+    			width: 10px * $devices-xs;
+    			height: 350px * $devices-xs;  
+    			margin-right: 10px * $devices-xs;  
+    			margin: 0 16px * $devices-xs;
+			.scrollbar-tab {
+					@include p-absolute(0px,-6px * $devices-xs); 
+    				width: 21px * $devices-xs;
+   					height: 21px * $devices-xs;
+    				border-radius: 21px * $devices-xs;
+    				box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4);
+			}
+			.scrollbar-tab.positive {
+					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+			}
+			.scrollbar-tab.negative {
+					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+			}
+			.scrollbar-progress {
+					width: 10px * $devices-xs; 
+			}
+		}
+	}
+}
+
+.devices.single-device { 	
+	width:700px * $devices-main;
+	@include media-max(993px){
+		width:700px;
+	}
+	@include media-max(769px){
+		width:700px * $devices-sm;
+	}
+	@include media-max(481px){
+		width:700px * $devices-xs;
+	}
+	.monitor { 
+		right:0;  
+		width:100%;
+		.monitor-container{ 
+			
+			.monitor-screen {
+				@include p-absolute(42px * $devices-main,83px * $devices-main);
+				height:335px * $devices-main;
+				@include media-max(993px){
+					@include p-absolute(42px,83px);
+					height:335px;
+				}
+				@include media-max(769px){
+					@include p-absolute(42px * $devices-sm,83px * $devices-sm);
+					height:335px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(42px * $devices-xs,83px * $devices-xs);
+					height:335px * $devices-xs;
+				}
+			} 
+
+		}
+	}
+
+	.tablet{
+		width:648px * $devices-main;
+		height:$devices-height * $devices-main;
+		@include p-absolute(0px,50%);
+		transform:translateX(-50%);
+
+		@include media-max(993px){
+			width:648px;
+			height:$devices-height;
+		}
+		@include media-max(769px){
+			width:648px * $devices-sm;
+			height:$devices-height * $devices-sm;
+		}
+		@include media-max(481px){
+			width:648px * $devices-xs;
+			height:$devices-height * $devices-xs;		
+		}
+
+		.tablet-container{ 
+			.tablet-frame{
+				width:auto;
+				height:$devices-height * $devices-main;
+				@include media-max(993px){
+					height:$devices-height;
+				}
+				@include media-max(769px){
+					height:$devices-height * $devices-sm;
+				}
+				@include media-max(481px){
+					height:$devices-height * $devices-xs;
+				}
+			} 
+			.tablet-screen{
+				@include p-absolute(25.8px * $devices-main,70.4px * $devices-main);
+				height:387.6px * $devices-main;
+				cursor:pointer;
+				@include media-max(993px){
+					@include p-absolute(25.8px,70.4px);
+					height:387.6px;
+				}
+				@include media-max(769px){
+					@include p-absolute(25.5px * $devices-sm,70.4px * $devices-sm);
+					height:388.6px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(25.5px * $devices-xs,70.4px * $devices-xs);
+					height:388.6px * $devices-xs;
+				}
+			}
+		}
+	}
+
+	.phone{
+		width:223.44px * $devices-main;
+		height:$devices-height * $devices-main;
+		@include p-absolute(0px,50%);
+		transform:translateX(-50%);
+		@include media-max(993px){
+			width:223.44px;
+			height:$devices-height;
+		}
+		@include media-max(769px){
+			width:223.44px * $devices-sm;
+			height:$devices-height * $devices-sm;
+		}
+		@include media-max(481px){
+			width:223.44px * $devices-xs;
+			height:$devices-height * $devices-xs;
+		}
+		.phone-container{ 
+			.phone-frame{
+				width:auto;
+				height:$devices-height * $devices-main;
+				@include media-max(993px){ 
+					height:$devices-height;
+				}
+				@include media-max(769px){
+					height:$devices-height * $devices-sm;
+				}
+				@include media-max(481px){
+					height:$devices-height * $devices-xs;
+				}
+			}
+			.phone-screen{
+				@include p-absolute(77px * $devices-main,18.8px * $devices-main);
+				width:188.8px * $devices-main;
+				height: 283.8px * $devices-main;
+				cursor:pointer;
+				@include media-max(993px){ 
+					@include p-absolute(77px,18.8px);
+					width:188.8px;
+					height: 283.8px;
+				}
+				@include media-max(769px){
+					@include p-absolute(76px * $devices-sm,18.8px * $devices-sm);
+					width:188.8px * $devices-sm;
+					height: 284.8px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(76px * $devices-xs,18.8px * $devices-xs);
+					width:188.8px * $devices-xs;
+					height: 284.8px * $devices-xs;
+				}
+			}
+		}
+	}
+	
+	.scrollbar { 
+		top:30px  * $devices-main;right:10px * $devices-main; 
+		@include media-max(993px){ 
+			top:30px ;right:10px; 
+		}
+		@include media-max(769px){
+			top:30px  * $devices-sm;right:10px * $devices-sm; 
+		}
+		@include media-max(481px){
+			top:30px  * $devices-xs;right:10px * $devices-xs; 
+		}
+		.scrollbar-trail {    
+    			width: 10px * $devices-main;
+    			height: 350px * $devices-main;  
+    			margin-right: 10px * $devices-main;  
+    			margin: 0 16px * $devices-main;
+    			@include media-max(993px){ 
+					width: 10px;
+	    			height: 350px;  
+	    			margin-right: 10px;  
+	    			margin: 0 16px;
+				}
+				@include media-max(769px){
+					width: 10px * $devices-sm;
+	    			height: 350px * $devices-sm;  
+	    			margin-right: 10px * $devices-sm;  
+	    			margin: 0 16px * $devices-sm;
+				}
+				@include media-max(481px){
+					width: 10px * $devices-xs;
+	    			height: 350px * $devices-xs;  
+	    			margin-right: 10px * $devices-xs;  
+	    			margin: 0 16px * $devices-xs;
+				}
+			.scrollbar-tab {
+					@include p-absolute(0px,-6px * $devices-main); 
+    				width: 21px * $devices-main;
+   					height: 21px * $devices-main;
+    				border-radius: 21px * $devices-main;
+    				box-shadow: 0 (1px * $devices-main) (3px * $devices-main) (1px * $devices-main) rgba(0,0,0,0.4);
+    				@include media-max(993px){ 
+						@include p-absolute(0px,-6px); 
+	    				width: 21px;
+	   					height: 21px;
+	    				border-radius: 21px;
+	    				box-shadow: 0 (1px) (3px) (1px) rgba(0,0,0,0.4);
+					}
+					@include media-max(769px){
+						@include p-absolute(0px,-6px * $devices-sm); 
+	    				width: 21px * $devices-sm;
+	   					height: 21px * $devices-sm;
+	    				border-radius: 21px * $devices-sm;
+	    				box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4);
+					}
+					@include media-max(481px){
+						@include p-absolute(0px,-6px * $devices-xs); 
+	    				width: 21px * $devices-xs;
+	   					height: 21px * $devices-xs;
+	    				border-radius: 21px * $devices-xs;
+	    				box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4);
+					}
+			}
+			.scrollbar-tab.positive {
+					box-shadow: 0 (1px * $devices-main) (3px * $devices-main) (1px * $devices-main)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					@include media-max(993px){ 
+						box-shadow: 0 (1px) (3px) (1px)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+					@include media-max(769px){
+						box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+					@include media-max(481px){
+						box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+			}
+			.scrollbar-tab.negative {
+					box-shadow: 0 (1px * $devices-main) (3px * $devices-main) (1px * $devices-main) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					@include media-max(993px){ 
+						box-shadow: 0 (1px) (3px) (1px) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+					@include media-max(769px){
+						box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+					@include media-max(481px){
+						box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+			}
+			.scrollbar-progress {
+					width: 10px * $devices-main; 
+					@include media-max(993px){ 
+						width: 10px; 
+					}
+					@include media-max(769px){
+						width: 10px * $devices-sm; 
+					}
+					@include media-max(481px){
+						width: 10px * $devices-xs; 
+					}
+			}
+		}
+	}
+	.monitor+.tablet,.monitor+.phone,.tablet+.phone,.tablet+.scrollbar,.phone+.scrollbar{
+		display:none;
+	}
+}
+
+.devices.single-device.devices-md { 	
+	width:700px;
+	
+	@include media-max(769px){
+		width:700px * $devices-sm;
+	}
+	@include media-max(481px){
+		width:700px * $devices-xs;
+	}
+	.monitor { 
+		
+		.monitor-container{ 
+			
+			.monitor-screen {
+				@include p-absolute(42px,83px);
+				height:335px;
+				
+				@include media-max(769px){
+					@include p-absolute(42px * $devices-sm,83px * $devices-sm);
+					height:335px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(42px * $devices-xs,83px * $devices-xs);
+					height:335px * $devices-xs;
+				}
+			} 
+
+		}
+	}
+
+	.tablet{
+		width:648px;
+		height:$devices-height;
+		
+
+		
+		@include media-max(769px){
+			width:648px * $devices-sm;
+			height:$devices-height * $devices-sm;
+		}
+		@include media-max(481px){
+			width:648px * $devices-xs;
+			height:$devices-height * $devices-xs;		
+		}
+
+		.tablet-container{ 
+			.tablet-frame{
+				
+				height:$devices-height;
+				
+				@include media-max(769px){
+					height:$devices-height * $devices-sm;
+				}
+				@include media-max(481px){
+					height:$devices-height * $devices-xs;
+				}
+			} 
+			.tablet-screen{
+				@include p-absolute(25.8px,70.4px);
+				height:387.6px;
+				
+				
+				@include media-max(769px){
+					@include p-absolute(25.5px * $devices-sm,70.4px * $devices-sm);
+					height:388.6px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(25.5px * $devices-xs,70.4px * $devices-xs);
+					height:388.6px * $devices-xs;
+				}
+			}
+		}
+	}
+
+	.phone{
+		width:223.44px;
+		height:$devices-height;
+		
+		
+		@include media-max(769px){
+			width:223.44px * $devices-sm;
+			height:$devices-height * $devices-sm;
+		}
+		@include media-max(481px){
+			width:223.44px * $devices-xs;
+			height:$devices-height * $devices-xs;
+		}
+		.phone-container{ 
+			.phone-frame{
+				
+				height:$devices-height;
+				
+				@include media-max(769px){
+					height:$devices-height * $devices-sm;
+				}
+				@include media-max(481px){
+					height:$devices-height * $devices-xs;
+				}
+			}
+			.phone-screen{
+				@include p-absolute(77px,18.8px);
+				width:188.8px;
+				height: 283.8px;
+				
+				@include media-max(769px){
+					@include p-absolute(76px * $devices-sm,18.8px * $devices-sm);
+					width:188.8px * $devices-sm;
+					height: 284.8px * $devices-sm;
+				}
+				@include media-max(481px){
+					@include p-absolute(76px * $devices-xs,18.8px * $devices-xs);
+					width:188.8px * $devices-xs;
+					height: 284.8px * $devices-xs;
+				}
+			}
+		}
+	}
+	
+	.scrollbar { 
+		top:30px ;right:10px; 
+		
+		@include media-max(769px){
+			top:30px  * $devices-sm;right:10px * $devices-sm; 
+		}
+		@include media-max(481px){
+			top:30px  * $devices-xs;right:10px * $devices-xs; 
+		}
+		.scrollbar-trail {    
+    			width: 10px;
+    			height: 350px;  
+    			margin-right: 10px;  
+    			margin: 0 16px;
+    			
+				@include media-max(769px){
+					width: 10px * $devices-sm;
+	    			height: 350px * $devices-sm;  
+	    			margin-right: 10px * $devices-sm;  
+	    			margin: 0 16px * $devices-sm;
+				}
+				@include media-max(481px){
+					width: 10px * $devices-xs;
+	    			height: 350px * $devices-xs;  
+	    			margin-right: 10px * $devices-xs;  
+	    			margin: 0 16px * $devices-xs;
+				}
+			.scrollbar-tab {
+					@include p-absolute(0px,-6px); 
+    				width: 21px;
+   					height: 21px;
+    				border-radius: 21px;
+    				box-shadow: 0 (1px) (3px) (1px) rgba(0,0,0,0.4);
+    				
+					@include media-max(769px){
+						@include p-absolute(0px,-6px * $devices-sm); 
+	    				width: 21px * $devices-sm;
+	   					height: 21px * $devices-sm;
+	    				border-radius: 21px * $devices-sm;
+	    				box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4);
+					}
+					@include media-max(481px){
+						@include p-absolute(0px,-6px * $devices-xs); 
+	    				width: 21px * $devices-xs;
+	   					height: 21px * $devices-xs;
+	    				border-radius: 21px * $devices-xs;
+	    				box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4);
+					}
+			}
+			.scrollbar-tab.positive {
+					box-shadow: 0 (1px) (3px) (1px)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					
+					@include media-max(769px){
+						box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+					@include media-max(481px){
+						box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+			}
+			.scrollbar-tab.negative {
+					box-shadow: 0 (1px) (3px) (1px) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					
+					@include media-max(769px){
+						box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+					@include media-max(481px){
+						box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+			}
+			.scrollbar-progress {
+					width: 10px; 
+					
+					@include media-max(769px){
+						width: 10px * $devices-sm; 
+					}
+					@include media-max(481px){
+						width: 10px * $devices-xs; 
+					}
+			}
+		}
+	}
+}
+
+.devices.single-device.devices-sm { 	
+	width:700px * $devices-sm;
+	
+	@include media-max(481px){
+		width:700px * $devices-xs;
+	}
+	.monitor { 
+		
+		.monitor-container{ 
+			
+			.monitor-screen {
+				@include p-absolute(42px * $devices-sm,83px * $devices-sm);
+				height:335px * $devices-sm;
+				
+				@include media-max(481px){
+					@include p-absolute(42px * $devices-xs,83px * $devices-xs);
+					height:335px * $devices-xs;
+				}
+			} 
+
+		}
+	}
+
+	.tablet{
+		width:648px * $devices-sm;
+		height:$devices-height * $devices-sm;
+		
+		@include media-max(481px){
+			width:648px * $devices-xs;
+			height:$devices-height * $devices-xs;		
+		}
+
+		.tablet-container{ 
+			.tablet-frame{
+				height:$devices-height * $devices-sm;
+				
+				@include media-max(481px){
+					height:$devices-height * $devices-xs;
+				}
+			} 
+			.tablet-screen{
+				@include p-absolute(25.8px * $devices-sm,70.4px * $devices-sm);
+				height:387.6px * $devices-sm;
+				
+				@include media-max(481px){
+					@include p-absolute(25.5px * $devices-xs,70.4px * $devices-xs);
+					height:388.6px * $devices-xs;
+				}
+			}
+		}
+	}
+
+	.phone{
+		width:223.44px * $devices-sm;
+		height:$devices-height * $devices-sm;
+		
+		
+		@include media-max(481px){
+			width:223.44px * $devices-xs;
+			height:$devices-height * $devices-xs;
+		}
+		.phone-container{ 
+			.phone-frame{
+				height:$devices-height * $devices-sm;
+				
+				@include media-max(481px){
+					height:$devices-height * $devices-xs;
+				}
+			}
+			.phone-screen{
+				@include p-absolute(77px * $devices-sm,18.8px * $devices-sm);
+				width:188.8px * $devices-sm;
+				height: 283.8px * $devices-sm;
+				
+				@include media-max(481px){
+					@include p-absolute(76px * $devices-xs,18.8px * $devices-xs);
+					width:188.8px * $devices-xs;
+					height: 284.8px * $devices-xs;
+				}
+			}
+		}
+	}
+	
+	.scrollbar { 
+		top:30px  * $devices-sm;right:10px * $devices-sm; 
+		
+		@include media-max(481px){
+			top:30px  * $devices-xs;right:10px * $devices-xs; 
+		}
+		.scrollbar-trail {    
+    			width: 10px * $devices-sm;
+    			height: 350px * $devices-sm;  
+    			margin-right: 10px * $devices-sm;  
+    			margin: 0 16px * $devices-sm;
+    			
+				@include media-max(481px){
+					width: 10px * $devices-xs;
+	    			height: 350px * $devices-xs;  
+	    			margin-right: 10px * $devices-xs;  
+	    			margin: 0 16px * $devices-xs;
+				}
+			.scrollbar-tab {
+					@include p-absolute(0px,-6px * $devices-sm); 
+    				width: 21px * $devices-sm;
+   					height: 21px * $devices-sm;
+    				border-radius: 21px * $devices-sm;
+    				box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4);
+    				
+					@include media-max(481px){
+						@include p-absolute(0px,-6px * $devices-xs); 
+	    				width: 21px * $devices-xs;
+	   					height: 21px * $devices-xs;
+	    				border-radius: 21px * $devices-xs;
+	    				box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4);
+					}
+			}
+			.scrollbar-tab.positive {
+					box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					
+					@include media-max(481px){
+						box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					}
+			}
+			.scrollbar-tab.negative {
+					box-shadow: 0 (1px * $devices-sm) (3px * $devices-sm) (1px * $devices-sm) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					
+					@include media-max(481px){
+						box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					}
+			}
+			.scrollbar-progress {
+					width: 10px * $devices-sm; 
+					
+					@include media-max(481px){
+						width: 10px * $devices-xs; 
+					}
+			}
+		}
+	}
+
+	
+}
+
+.devices.single-device.devices-xs { 	
+	width:700px * $devices-xs;
+	
+	.monitor { 
+		
+		.monitor-container{ 
+			
+			.monitor-screen {
+				@include p-absolute(42px * $devices-xs,83px * $devices-xs);
+				height:335px * $devices-xs;
+				
+				
+			} 
+
+		}
+	}
+
+	.tablet{
+		width:648px * $devices-xs;
+		height:$devices-height * $devices-xs;
+		@include p-absolute(0px,50%);
+		transform:translateX(-50%);
+
+
+		.tablet-container{ 
+			.tablet-frame{
+				width:auto;
+				height:$devices-height * $devices-xs;
+	
+			} 
+			.tablet-screen{
+				@include p-absolute(25.5px * $devices-xs,70.4px * $devices-xs);
+				height:388.6px * $devices-xs;
+			
+			}
+		}
+	}
+
+	.phone{
+		width:223.44px * $devices-xs;
+		height:$devices-height * $devices-xs;
+		
+		@include media-max(481px){
+			width:223.44px * $devices-xs;
+			height:$devices-height * $devices-xs;
+		}
+		.phone-container{ 
+			.phone-frame{
+				height:$devices-height * $devices-xs;
+			}
+			.phone-screen{
+				@include p-absolute(76px * $devices-xs,18.8px * $devices-xs);
+				width:188.8px * $devices-xs;
+				height: 284.8px * $devices-xs;
+				
+			}
+		}
+	}
+	
+	.scrollbar { 
+		top:30px  * $devices-xs;right:10px * $devices-xs; 
+		
+		.scrollbar-trail {    
+    			width: 10px * $devices-xs;
+    			height: 350px * $devices-xs;  
+    			margin-right: 10px * $devices-xs;  
+    			margin: 0 16px * $devices-xs;
+    			
+				
+			.scrollbar-tab {
+					@include p-absolute(0px,-6px * $devices-xs); 
+    				width: 21px * $devices-xs;
+   					height: 21px * $devices-xs;
+    				border-radius: 21px * $devices-xs;
+    				box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4);
+    				
+					
+			}
+			.scrollbar-tab.positive {
+					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs)  rgba(0,0,0,0.4),0 0 0 15px rgba(38,166,154,0.1);
+					
+					
+			}
+			.scrollbar-tab.negative {
+					box-shadow: 0 (1px * $devices-xs) (3px * $devices-xs) (1px * $devices-xs) rgba(0,0,0,0.4),0 0 0 15px rgba(0,0,0,0.08);
+					
+			}
+			.scrollbar-progress {
+					width: 10px * $devices-xs; 
+					
+			}
+		}
+	}
+
+	
+}
+
+
+
+
+

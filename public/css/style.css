@@ -1,12 +1,26 @@
 body {
   background-color: #cdcdcd; }
 
-@media only screen and (min-width: 480px) {
+#style-5::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5; }
+
+#style-5::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5; }
+
+#style-5::-webkit-scrollbar-thumb {
+  background-color: #2fc4c3;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.5, transparent), to(transparent)); }
+
+@media only screen and (min-width: 0px) {
   nav {
     background-color: #eef3f3;
     position: relative;
     box-shadow: 0 0 0 0 transparent; }
-
+    nav .brand-logo {
+      margin-top: 3px;
+      margin-left: 50px; }
     nav ul {
       position: absolute;
       right: 50px; }
@@ -18,6 +32,28 @@ body {
         padding: 0 20px; }
       nav ul a:hover {
         background-color: #eef3f3;
+        color: #2fc4c3;
+        font-family: font129646;
+        font-size: 14px;
+        text-transform: uppercase; }
+
+  #sidenav-overlay {
+    z-index: 0; }
+
+  .side-nav {
+    background-color: #ffffff;
+    padding-top: 20px; }
+    .side-nav li {
+      top: 20px;
+      padding: 5px 0; }
+      .side-nav li a {
+        text-align: center;
+        color: #058382;
+        font-family: font129646;
+        font-size: 14px;
+        text-transform: uppercase; }
+      .side-nav li a:hover {
+        background-color: #ffffff;
         color: #2fc4c3;
         font-family: font129646;
         font-size: 14px;
@@ -146,8 +182,9 @@ body {
     .main-content #about-me .info {
       padding-top: 50px;
       position: relative; }
-      .main-content #about-me .info .row .download button {
-        margin-top: 50px; }
+      .main-content #about-me .info .row .download a {
+        margin-top: 30px;
+        margin-bottom: 50px; }
       .main-content #about-me .info .row .pic {
         position: absolute;
         top: 100px;
@@ -286,14 +323,16 @@ body {
       .main-content #works .row #church .church:before, .main-content #works .row #church .church:after {
         content: "";
         background: url(../img/separator.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         height: 1px;
-        display: block;
-        margin-left: 50px; }
+        display: block; }
       .main-content #works .row #church p.description {
         font-family: font124629;
         font-size: 16px;
-        width: 100%;
+        width: 550px;
         text-align: center;
         margin: 40px auto; }
       .main-content #works .row #church .application {
@@ -332,14 +371,16 @@ body {
       .main-content #works .row #dti .dti:before, .main-content #works .row #dti .dti:after {
         content: "";
         background: url(../img/separator.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         height: 1px;
-        display: block;
-        margin-left: 50px; }
+        display: block; }
       .main-content #works .row #dti p.description {
         font-family: font124629;
         font-size: 16px;
-        width: 100%;
+        width: 550px;
         text-align: center;
         margin: 40px auto; }
       .main-content #works .row #dti .application {
@@ -378,14 +419,16 @@ body {
       .main-content #works .row #tcvb .tcvb:before, .main-content #works .row #tcvb .tcvb:after {
         content: "";
         background: url(../img/separator.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         height: 1px;
-        display: block;
-        margin-left: 50px; }
+        display: block; }
       .main-content #works .row #tcvb p.description {
         font-family: font124629;
         font-size: 16px;
-        width: 100%;
+        width: 550px;
         text-align: center;
         margin: 40px auto; }
       .main-content #works .row #tcvb .application {
@@ -408,6 +451,54 @@ body {
           background-color: #ee6e73; }
         .main-content #works .row #tcvb .application .btn:hover {
           background-color: rgba(238, 110, 115, 0.85); }
+      .main-content #works .row #portfolio .portfolio {
+        margin: 40px 0;
+        text-align: center; }
+        .main-content #works .row #portfolio .portfolio ul {
+          list-style: none; }
+          .main-content #works .row #portfolio .portfolio ul li {
+            display: inline-block;
+            margin-right: 30px;
+            padding: 10px 0px;
+            font-family: font124629;
+            font-size: 16px; }
+            .main-content #works .row #portfolio .portfolio ul li .semibold {
+              font-weight: 600; }
+      .main-content #works .row #portfolio .portfolio:before, .main-content #works .row #portfolio .portfolio:after {
+        content: "";
+        background: url(../img/separator.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 1px;
+        display: block; }
+      .main-content #works .row #portfolio p.description {
+        font-family: font124629;
+        font-size: 16px;
+        width: 550px;
+        text-align: center;
+        margin: 40px auto; }
+      .main-content #works .row #portfolio .application {
+        margin: 50px;
+        text-align: center; }
+        .main-content #works .row #portfolio .application h4 {
+          font-size: 20px;
+          font-family: font124629;
+          font-weight: 600;
+          line-height: 40px; }
+        .main-content #works .row #portfolio .application ul {
+          list-style: none; }
+          .main-content #works .row #portfolio .application ul li {
+            display: inline-block;
+            padding: 10px;
+            background: #efefef;
+            border-radius: 8px;
+            margin: 0px 5px 0 0; }
+        .main-content #works .row #portfolio .application .btn {
+          background-color: #ee6e73; }
+        .main-content #works .row #portfolio .application .btn:hover {
+          background-color: rgba(238, 110, 115, 0.85); }
     .main-content hr {
       margin-top: 4rem;
       margin-bottom: 1rem;
@@ -426,66 +517,170 @@ body {
     left: -40px;
     right: -40px;
     z-index: -1; } }
+@media only screen and (max-width: 1025px) {
+  .main-content #about-me .info .row .pic {
+    left: 50px; }
+
+  .main-content #skills .row.front-end .skill-1 {
+    margin-top: 3px;
+    font-size: 24px; }
+
+  .main-content #skills .row.back-end .skill-2 {
+    margin-top: 3px;
+    font-size: 24px; }
+
+  .main-content #skills .row.app-tools .skill-3 {
+    margin-top: 3px;
+    font-size: 24px; } }
+@media only screen and (max-width: 769px) {
   nav .brand-logo {
-      margin-top:3px;
-      margin-left:50px;
-  }
-@media only screen and (max-width: 769px){
-    .main-content #about-me .info .row .pic {
-        position: relative;
-        top: auto;
-        left: auto;
-        height: 250px;
-        transform: rotate(-5deg); 
+    margin-left: 0px; }
 
-      }
-    .main-content #about-me .info .row .pic-pic {
-      text-align: center;
-      width: 100%;
-    }
-    nav .brand-logo {      
-      margin-left:0px;
-    }
-}
+  .main-content #about-me .info .row .pic-pic {
+    text-align: center;
+    width: 100%; }
+    .main-content #about-me .info .row .pic-pic .pic {
+      position: relative;
+      top: auto;
+      left: auto;
+      height: 250px;
+      transform: rotate(-5deg); }
+  .main-content #about-me .info .row .about-info {
+    padding-top: 25px; }
+    .main-content #about-me .info .row .about-info p.about-text {
+      padding: 0px 50px 0px 50px; }
+  .main-content #skills .row.front-end .skill-1 {
+    margin-top: 6px;
+    font-size: 18px; }
+  .main-content #skills .row.back-end .skill-2 {
+    margin-top: 6px;
+    font-size: 18px; }
+  .main-content #skills .row.app-tools .skill-3 {
+    margin-top: 6px;
+    font-size: 18px; }
+  .main-content #works .row #church .church ul li {
+    margin-right: 12px;
+    font-size: 13px; }
+  .main-content #works .row #church .application ul li {
+    padding: 4px; }
+  .main-content #works .row #dti .dti ul li {
+    margin-right: 12px;
+    font-size: 13px; }
+  .main-content #works .row #dti .application ul li {
+    padding: 4px; }
+  .main-content #works .row #tcvb .tcvb ul li {
+    margin-right: 12px;
+    font-size: 13px; }
+  .main-content #works .row #tcvb .application ul li {
+    padding: 4px; }
+  .main-content #works .row #portfolio .portfolio ul li {
+    margin-right: 12px;
+    font-size: 13px; }
+  .main-content #works .row #portfolio .application ul li {
+    padding: 4px; } }
 @media only screen and (max-width: 481px) {
-  nav {
-    background-color: #eef3f3; }
+  nav .brand-logo {
+    margin-top: 0px; }
 
-  .material-icons {
-    color: #009d9c; }
-
-  .side-nav {
-    background-color: #ffffff;
-    padding-top: 20px; }
-    .side-nav li {
-      top: 20px;
-      padding: 5px 0; }
-      .side-nav li a {
-        text-align: center;
-        color: #058382;
-        font-family: font129646;
-        font-size: 14px;
-        text-transform: uppercase; }
-      .side-nav li a:hover {
-        background-color: #ffffff;
-        color: #2fc4c3;
-        font-family: font129646;
-        font-size: 14px;
-        text-transform: uppercase; }
-
-  .top-content {
-    background-image: url(../img/background.png);
-    height: 435px;
-    width: 100%;
-    position: relative; }
-    .top-content .tag1, .top-content .tag2, .top-content .tag3, .top-content .tag4, .top-content .cloud, .top-content p {
-      display: none; }
+  .top-content .tag1 {
+    font-size: 18px;
+    top: 25px;
+    left: 20px; }
+  .top-content .tag2 {
+    font-size: 18px;
+    top: 80px;
+    left: 30px; }
+  .top-content .tag3 {
+    font-size: 18px;
+    top: 305px;
+    left: 20px; }
+  .top-content .tag4 {
+    font-size: 18px;
+    top: 350px;
+    left: 5px; }
+  .top-content .cloud {
+    top: 20%;
+    left: 50%; }
+  .top-content .text_1 {
+    font-size: 36px;
+    padding-top: 152px; }
+  .top-content .text_2 {
+    font-size: 24px;
+    padding-top: 10px; }
+  .top-content .text_3 {
+    font-size: 14px; }
 
   .main-content {
-    display: none; }
+    width: 100%;
+    margin: 0; }
+    .main-content #about-me .title .about {
+      font-size: 26px; }
+    .main-content #about-me .info .row .pic-pic .pic {
+      height: 180px; }
+    .main-content #about-me .info .row .about-info p.about-text {
+      padding: 0px 30px 0px 30px;
+      font-size: 16px; }
+    .main-content #skills .row.front-end {
+      margin: -15px 0px 0px 0px; }
+      .main-content #skills .row.front-end .carousel-1 {
+        padding: 0 50px 0 50px; }
+    .main-content #skills .row.back-end {
+      margin: -15px 0px 0px 0px; }
+      .main-content #skills .row.back-end .carousel-2 {
+        padding: 0 50px 0 50px; }
+    .main-content #skills .row.app-tools {
+      margin: -15px 0px 0px 0px; }
+      .main-content #skills .row.app-tools .carousel-3 {
+        padding: 0 50px 0 50px; }
+    .main-content #works .title p.works {
+      font-size: 26px; }
+    .main-content #works .row ul.tabs {
+      display: block;
+      overflow-x: visible;
+      overflow-y: visible; }
+    .main-content #works .row #church p.description {
+      font-size: 14px;
+      width: 100%; }
+    .main-content #works .row #church .application h4 {
+      font-size: 16px; }
+    .main-content #works .row #church .application ul li {
+      padding: 5px;
+      margin: 2px 5px 2px 0px; }
+    .main-content #works .row #dti p.description {
+      font-size: 14px;
+      width: 100%; }
+    .main-content #works .row #dti .application h4 {
+      font-size: 16px; }
+    .main-content #works .row #dti .application ul li {
+      padding: 5px;
+      margin: 2px 5px 2px 0px; }
+    .main-content #works .row #tcvb p.description {
+      font-size: 14px;
+      width: 100%; }
+    .main-content #works .row #tcvb .application h4 {
+      font-size: 16px; }
+    .main-content #works .row #tcvb .application ul li {
+      padding: 5px;
+      margin: 2px 5px 2px 0px; }
+    .main-content #works .row #portfolio p.description {
+      font-size: 14px;
+      width: 100%; }
+    .main-content #works .row #portfolio .application h4 {
+      font-size: 16px; }
+    .main-content #works .row #portfolio .application ul li {
+      padding: 5px;
+      margin: 2px 5px 2px 0px; }
 
-  footer .container {
-    display: none; } }
+  .main-content:before {
+    top: -20px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; }
+
+  footer.page-footer {
+    margin-top: -20px; }
+    footer.page-footer .container {
+      padding: 0px; } }
 .page-footer {
   background-color: #2fc4c3; }
   .page-footer .container {

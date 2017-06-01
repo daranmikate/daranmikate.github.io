@@ -16,8 +16,30 @@ body{
 	background-color: $body-color;
 }
 
+#style-5::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
 
-@media only screen and (min-width: 993px) {
+#style-5::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-5::-webkit-scrollbar-thumb
+{
+	background-color: $light-blue;
+	
+	background-image: -webkit-gradient(linear, 0 0, 0 100%,
+	                   color-stop(.5, rgba(255, 255, 255, .2)),
+					   color-stop(.5, transparent), to(transparent));
+}
+
+
+
+@media only screen and (min-width: 0px) {
 
 	nav{
 		background-color: $nav-background;
@@ -25,9 +47,8 @@ body{
 		box-shadow: 0 0 0 0 rgba(0,0,0,0);
 
 		.brand-logo{
-			position: absolute;
-			top: 3px;
-			left: 50px;
+			margin-top: 3px;
+			margin-left: 50px;
 		}
 		ul{
 			position: absolute;
@@ -42,6 +63,35 @@ body{
 			}
 			a:hover{
 				background-color: #eef3f3;
+	    		color: #2fc4c3;
+				font-family: font129646;
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	#sidenav-overlay{
+		z-index: 0;
+	}
+
+	.side-nav{
+		background-color: $white;
+		padding-top: 20px;
+
+		li{
+			top: 20px;
+			padding: 5px 0;
+
+			a{
+				text-align: center;
+				color: $nav-color;
+				font-family: font129646;
+				font-size: 14px;
+				text-transform: uppercase;
+			}
+			a:hover{
+				background-color: $white;
 	    		color: #2fc4c3;
 				font-family: font129646;
 				font-size: 14px;
@@ -200,8 +250,9 @@ body{
 				position: relative;
 				
 				.row{
-					.download button{
-						margin-top:50px;
+					.download a{
+						margin-top:30px;
+						margin-bottom: 50px;
 					}
 					.pic{
 						position: absolute;
@@ -417,10 +468,12 @@ body{
 					.church:before, .church:after {
 					    content: "";
 					    background: url(../img/separator.png);
-					    width: 980px;
+					    background-position: 50% 50%;
+					    background-repeat: no-repeat;
+					    background-size: cover;
+					    width: 100%;
 					    height: 1px;
 					    display: block;
-					    margin-left: 50px;
 					}
 					p.description {
 						font-family: font124629;
@@ -484,10 +537,12 @@ body{
 					.dti:before, .dti:after {
 					    content: "";
 					    background: url(../img/separator.png);
-					    width: 980px;
+					    background-position: 50% 50%;
+					    background-repeat: no-repeat;
+					    background-size: cover;
+					    width: 100%;
 					    height: 1px;
 					    display: block;
-					    margin-left: 50px;
 					}
 					p.description {
 						font-family: font124629;
@@ -551,10 +606,81 @@ body{
 					.tcvb:before, .tcvb:after {
 					    content: "";
 					    background: url(../img/separator.png);
-					    width: 980px;
+					    background-position: 50% 50%;
+					    background-repeat: no-repeat;
+					    background-size: cover;
+					    width: 100%;
 					    height: 1px;
 					    display: block;
-					    margin-left: 50px;
+					}
+					p.description {
+						font-family: font124629;
+					    font-size: 16px;
+					    width: 550px;
+					    text-align: center;
+					    margin: 40px auto;
+					}
+					.application{
+						margin: 50px;
+    					text-align: center;
+
+    					h4{
+    						font-size: 20px;
+						    font-family: font124629;
+						    font-weight: 600;
+						    line-height: 40px;
+    					}
+
+    					ul{
+    						list-style: none;
+
+    						li{
+    							display: inline-block;
+    							padding: 10px;
+    							background: #efefef;
+    							border-radius: 8px;
+    							margin: 0px 5px 0 0;
+    						}
+    					}
+    					.btn{
+    						background-color: #ee6e73;
+    					}
+    					.btn:hover{
+    						background-color: rgba(238, 110, 115, 0.85);
+    					}
+					}
+				}
+
+
+				#portfolio{
+
+					.portfolio{
+						margin: 40px 0;
+						text-align: center;
+						ul{
+							list-style: none;
+
+							li{
+								display: inline-block;
+								margin-right: 30px;
+								padding: 10px 0px;
+								font-family: font124629;
+								font-size: 16px;
+								.semibold{
+									font-weight: 600;
+								}
+							}
+						}
+					}
+					.portfolio:before, .portfolio:after {
+					    content: "";
+					    background: url(../img/separator.png);
+					    background-position: 50% 50%;
+					    background-repeat: no-repeat;
+					    background-size: cover;
+					    width: 100%;
+					    height: 1px;
+					    display: block;
 					}
 					p.description {
 						font-family: font124629;
@@ -626,58 +752,340 @@ body{
 
 
 }
-@media only screen and (max-width: 992px){
 
-	nav{
-		background-color: $nav-background;
+@media only screen and (max-width: 1025px) {
+	.main-content #about-me .info .row .pic {
+	    left: 50px;
 	}
-	.material-icons{
-		color: $dark-blue;
+	.main-content #skills .row.front-end .skill-1 {
+	    margin-top: 3px;
+	    font-size: 24px;
 	}
-	.side-nav{
-		background-color: $white;
-		padding-top: 20px;
+	.main-content #skills .row.back-end .skill-2 {
+	    margin-top: 3px;
+	    font-size: 24px;
+	}
+	.main-content #skills .row.app-tools .skill-3 {
+	    margin-top: 3px;
+	    font-size: 24px;
+	}
 
-		li{
-			top: 20px;
-			padding: 5px 0;
+}
+@media only screen and (max-width: 769px){
 
-			a{
-				text-align: center;
-				color: $nav-color;
-				font-family: font129646;
-				font-size: 14px;
-				text-transform: uppercase;
-			}
-			a:hover{
-				background-color: $white;
-	    		color: #2fc4c3;
-				font-family: font129646;
-				font-size: 14px;
-				text-transform: uppercase;
+     nav .brand-logo {      
+      margin-left:0px;
+    }
+
+    .main-content{
+    	#about-me{
+    		.info{
+    			.row{
+    				.pic-pic{
+    					text-align: center;
+      					width: 100%;
+
+    					.pic{
+    						position: relative;
+					        top: auto;
+					        left: auto;
+					        height: 250px;
+					        transform: rotate(-5deg); 
+    					}
+    				}
+    				.about-info{
+    					padding-top: 25px;
+
+	    				p.about-text{
+	    					padding: 0px 50px 0px 50px;
+	    				}
+    				}
+    			}
+    		}
+    	}
+
+    	#skills{
+    		.row.front-end{
+	    		.skill-1{
+	    			margin-top: 6px;
+				    font-size: 18px;
+	    		}
+    		}
+    		.row.back-end{
+	    		.skill-2{
+	    			margin-top: 6px;
+				    font-size: 18px;
+	    		}
+    		}
+    		.row.app-tools{
+	    		.skill-3{
+	    			margin-top: 6px;
+				    font-size: 18px;
+	    		}
+    		}
+    	}
+
+    	#works{
+    		.row #church {
+    			.church ul li{
+				    margin-right: 12px;
+				    font-size: 13px;
+    			}
+    			.application ul li{
+				    padding: 4px;
+	    		}
+    		}
+    		
+    		.row #dti {
+    			.dti ul li{
+				    margin-right: 12px;
+				    font-size: 13px;
+    			}
+	    		.application ul li{
+				    padding: 4px;
+	    		}
+    		}
+    		.row #tcvb {
+    			.tcvb ul li{
+				    margin-right: 12px;
+				    font-size: 13px;
+    			}
+	    		.application ul li{
+				    padding: 4px;
+	    		}
+    		}
+    		.row #portfolio {
+    			.portfolio ul li{
+				    margin-right: 12px;
+				    font-size: 13px;
+    			}
+	    		.application ul li{
+				    padding: 4px;
+	    		}
+    		}
+    	}
+
+    }
+
+
+}
+
+@media only screen and (max-width: 481px) {
+
+	nav .brand-logo {
+	    margin-top: 0px;
+	}
+	
+	.top-content{
+		.tag1{
+			font-size: 18px;
+			top: 25px;
+			left: 20px;
+		}
+		.tag2{
+			font-size: 18px;
+			top: 80px;
+			left: 30px;
+		}
+		.tag3{
+			font-size: 18px;
+			top: 305px;
+			left: 20px;
+		}
+		.tag4{
+			font-size: 18px;
+			top: 350px;
+			left: 5px;
+		}
+
+		.cloud{
+			top: 20%;
+			left: 50%;
+
+			.cloud-content{
+				.bear{
+					.bear-container{
+
+					}
+				}
 			}
 		}
+		.text_1{
+			font-size: 36px;
+			padding-top: 152px;
+		}
+		.text_2{
+			font-size: 24px;
+			padding-top: 10px;
+		}
+		.text_3{
+			font-size: 14px;
+		}
 	}
-	.top-content{
-		background-image: url(../img/background.png);
-		height: 435px;
-		width: 100%;
-		position: relative;
 
-		.tag1, .tag2, .tag3, .tag4, .cloud, p{
-			display: none;
+
+	.main-content{
+		width: 100%;
+		margin: 0;
+
+		#about-me{
+			.title{
+				.about{
+				    font-size: 26px;
+				}
+			}
+			.info{
+				.row{
+					.pic-pic{
+						.pic{
+							height: 180px;
+						}
+					}
+					.about-info{
+						p.about-text{
+							padding: 0px 30px 0px 30px;
+							font-size: 16px;
+						}
+					}
+					.download{
+						a{
+
+						}
+					}
+				}
+			}
+		}
+		#skills{
+			.row.front-end{
+				margin: -15px 0px 0px 0px;
+
+				.carousel-1{
+					padding: 0 50px 0 50px;
+				}
+			}
+			.row.back-end{
+				margin: -15px 0px 0px 0px;
+
+				.carousel-2{
+					padding: 0 50px 0 50px;
+				}
+			}
+			.row.app-tools{
+				margin: -15px 0px 0px 0px;
+
+				.carousel-3{
+					padding: 0 50px 0 50px;
+				}
+			}
+		}
+
+		#works{
+			.title{
+				p.works{
+					font-size: 26px;
+				}
+			}
+			.row{
+				ul.tabs{
+					display: block;
+					overflow-x: visible;
+					overflow-y: visible;
+				}
+
+				#church{
+					p.description{
+						font-size: 14px;
+						width: 100%;
+					}
+					.application{
+						h4{
+							font-size: 16px;
+						}
+						ul{
+							li{
+								padding: 5px;
+								margin: 2px 5px 2px 0px;
+							}
+						}
+					} 
+				}
+
+				#dti{
+					p.description{
+						font-size: 14px;
+						width: 100%;
+					}
+					.application{
+						h4{
+							font-size: 16px;
+						}
+						ul{
+							li{
+								padding: 5px;
+								margin: 2px 5px 2px 0px;
+							}
+						}
+					} 
+				}
+
+				#tcvb{
+					p.description{
+						font-size: 14px;
+						width: 100%;
+					}
+					.application{
+						h4{
+							font-size: 16px;
+						}
+						ul{
+							li{
+								padding: 5px;
+								margin: 2px 5px 2px 0px;
+							}
+						}
+					} 
+				}
+
+				#portfolio{
+					p.description{
+						font-size: 14px;
+						width: 100%;
+					}
+					.application{
+						h4{
+							font-size: 16px;
+						}
+						ul{
+							li{
+								padding: 5px;
+								margin: 2px 5px 2px 0px;
+							}
+						}
+					} 
+				}
+
+
+
+			}
+		}
+
+
+	}
+
+	.main-content:before{
+		top:-20px;
+		bottom:0px;
+		left:0px;
+		right:0px;
+	}
+	footer.page-footer{
+		margin-top: -20px;
+		
+		.container{
+			padding: 0px;
 		}
 		
 	}
-	.main-content{
-		display: none;
-	}
-	footer{
-		.container{
-			display:none;
-		}
-	}
-
 
 }
 
